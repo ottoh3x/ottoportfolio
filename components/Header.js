@@ -4,13 +4,14 @@ import HeaderItem from './HeaderItem'
 
 function Header() {
   return (
-    <div className='flex justify-between container mx-auto py-4 px-4 font-poppins text-xl text-gray-200 '>
+    <div className='flex justify-between container mx-auto py-2 px-4 font-poppins text-xl text-gray-200 '>
         <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-200 to-green-600">OTTO Programmer</h2>
         <div className="hidden md:flex gap-4 ">
             <HeaderItem url={`home`} title="Home" />
             <HeaderItem url={`home`} title="About" />
             <HeaderItem url={`home`} title="Projects" />
-            <HeaderItem url={`home`} title="Contact" />
+            <div className=" border-2 rounded-t-lg bg-green-900 hover:bg-green-700">
+            <HeaderItem url={`home`} title="Contact" /></div>
 
         </div>
         <div className="cursor-pointer md:hidden">
