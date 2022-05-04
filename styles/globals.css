@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body ,html{
+    background : linear-gradient(308deg, black, rgb(44, 42, 42));
+}
+
+.selected-circle {
+    @apply bg-green-600 border-r-white 
+}
