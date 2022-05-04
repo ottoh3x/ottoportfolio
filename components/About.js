@@ -8,8 +8,8 @@ function About() {
           About
         </h1>
         <p className="text-gray-300 text-xl font-mono light">
-          Hello , i'm Otto Programmer I love to make new ideas and bring them to
-          the browser , i'm based in morocco .
+          Whatever makes u happy idk what the fuck are u talking about im not
+          running a charity here okay
         </p>
         <h1 className="text-3xl bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-green-400 to-green-700">
           Skills
