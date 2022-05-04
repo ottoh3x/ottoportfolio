@@ -12,7 +12,7 @@ function Hero() {
         </h1>
         
 
-        <Image src="/bg.png" width={500} height={500} />
+        <Image src="/bg.png" alt="bg" width={500} height={500} />
 
         <nav className="hidden lg:inline-block fixed left-12 top-32 ">
             <div className="absolute left-50 transform -translate-x-1/2 space-y-6">
