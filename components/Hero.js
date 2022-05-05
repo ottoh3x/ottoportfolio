@@ -6,13 +6,13 @@ function Hero() {
   return (
     <section className="bg-gradient-to-l from-stone-700 via-stone-900 to-black ">
       {" "}
-      <div className="container relative h-98 flex mx-auto justify-between">
+      <div className="container relative h-52 lg:h-98 flex mx-auto justify-between">
         <h1 className="flex items-center text-center text-2xl lg:text-5xl font-extrabold max-w-2xl text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-green-400 to-green-700">
           BUILDING PROJECTS FOR THE NEXT GENERATION
         </h1>
         
-
-        <Image src="/bg.png" alt="bg" width={500} height={500} />
+        <div className="hidden">
+        <Image src="/bg.png" alt="bg" width={500} height={500}  /></div>
 
         <nav className="hidden lg:inline-block fixed left-12 top-32 ">
             <div className="absolute left-50 transform -translate-x-1/2 space-y-6">
