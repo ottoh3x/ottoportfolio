@@ -4,13 +4,14 @@ import Image from 'next/image'
 
 function Hero() {
   return (
-    <section className="bg-gradient-to-l from-green-900 via-stone-900 to-black ">
+    <section className="bg-gradient-to-r from-[#1c502421] to-black ">
       {" "}
-      <div className="container relative h-52 lg:h-98 flex mx-auto justify-between">
-        <h1 className="flex items-center text-center text-2xl lg:text-5xl font-extrabold max-w-2xl text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-green-400 to-green-700">
-          BUILDING PROJECTS FOR THE NEXT GENERATION
+      <div className="container relative h-52 lg:h-98 flex items-center mx-auto justify-between">
+        <div className="max-w-2xl">
+        <h1 className="text-center text-2xl lg:text-5xl font-extrabold  text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-green-400 to-green-700">
+          Building Projects For The Next Genration
         </h1>
-        
+        <p className="text-gray-400 p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus molestiae eos a quos suscipit dolorem sapiente fuga id minus quaerat.</p></div>
         <div className="hidden md:inline">
         <Image src="/bg.png" alt="bg" width={500} height={500}  /></div>
 

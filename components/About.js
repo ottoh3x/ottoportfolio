@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import {
   SiNextdotjs,
   SiReact,
@@ -13,7 +14,7 @@ import SkillsIcon from "./SkillsIcon";
 function About() {
   return (
     <>
-      <div className="flex flex-col justify-center  mx-auto lg:w-1/2 h-full p-6  my-6 space-y-6">
+      <div className="flex flex-col justify-center  mx-auto lg:w-2/3 h-full p-6  my-6 space-y-6 bg-[#56565614] rounded-lg">
         <div className="flex flex-col p-4">
           {" "}
           <h1 className="text-3xl bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-white to-green-700">
@@ -21,6 +22,7 @@ function About() {
           </h1>
           <span className="rounded-full border-2 w-6 border-gray-400  "></span>
         </div>
+          <img className="object-contain mx-auto max-w-max w-60 border-2 border-gray-600 rounded-full" src="/pfp.png" />
         <p className="text-gray-300 text-xl text-center font-mono light md:w-1/2 mx-auto">
           Hello , i'm Otto Programmer I love to make new ideas and bring them to
           the browser , i'm based in morocco .
@@ -42,9 +44,6 @@ function About() {
           <SkillsIcon icon={<SiHtml5 />} />
           <SkillsIcon icon={<SiCss3 />} />
           <SkillsIcon icon={<SiTailwindcss />} />
-
-          
-          
         </div>
       </div>
     </>

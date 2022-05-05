@@ -16,7 +16,7 @@ export default function Home() {
 
 <Header />    
 <Hero />
-<section className="mb-8">
+<section className="mb-8 px-4">
 <About />
 </section>
 <hr className='border-2 w-1/2 mx-auto border-gray-500 mb-12'></hr>
