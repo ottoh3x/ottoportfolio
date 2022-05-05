@@ -11,7 +11,7 @@ function Hero() {
           BUILDING PROJECTS FOR THE NEXT GENERATION
         </h1>
         
-        <div className="hidden">
+        <div className="hidden md:inline">
         <Image src="/bg.png" alt="bg" width={500} height={500}  /></div>
 
         <nav className="hidden lg:inline-block fixed left-12 top-32 ">
