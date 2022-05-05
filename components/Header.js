@@ -4,7 +4,7 @@ import HeaderItem from './HeaderItem'
 
 function Header() {
   return (
-    <div className='flex justify-between container mx-auto py-2 px-4 font-poppins text-xl text-gray-200 '>
+    <div className='flex justify-between container mx-auto py-4 px-4 md:py-2 font-poppins text-xl text-gray-200 '>
         <h2 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-200 to-green-600">OTTO Programmer</h2>
         <div className="hidden md:flex gap-4 ">
             <HeaderItem url={`home`} title="Home" />

@@ -5,11 +5,13 @@ module.exports = {
   ],
   theme: {
     extend: {
-      spacing : {
-        98 : '33rem'
-
-      }
+      spacing: {
+        98: "33rem",
+      },
+      fontFamily: {
+        body: ["Bebas Neue", "cursive"],
+      },
     },
   },
   plugins: [],
-}
+};

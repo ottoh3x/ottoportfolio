@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap');
 
 body ,html{
-    background : linear-gradient(308deg, black, rgb(44, 42, 42));
-    height:100vh
+    background : black;
 }
 
 .selected-circle {
