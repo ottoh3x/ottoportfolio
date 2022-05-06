@@ -11,6 +11,9 @@ module.exports = {
       fontFamily: {
         body: ["Bebas Neue", "cursive"],
       },
+      zIndex : {
+        100 : '99999'
+      }
     },
   },
   plugins: [],
