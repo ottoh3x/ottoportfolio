@@ -3,7 +3,7 @@ import React from "react";
 import { useState } from "react";
 import HeaderItem from "./HeaderItem";
 import { FaQuestion, FaHome } from "react-icons/fa";
-import { GrProjects } from "react-icons/gr";
+import { MdWorkspacesFilled } from "react-icons/md";
 import { RiContactsFill } from "react-icons/ri";
 
 function Header() {
@@ -49,7 +49,7 @@ function Header() {
           ) : (
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-8 w-8"
+              className="h-8 w-8"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -76,7 +76,7 @@ function Header() {
         <div className='text-gray-400 space-y-4 border-r-2 border-gray-800 px-4 '>
           <FaHome size={28}/>
           <FaQuestion size={28} />
-          <GrProjects  size={28}/>
+          <MdWorkspacesFilled  size={28}/>
           <RiContactsFill  size={28}/>{" "}
         </div>
         <ul className="text-gray-300 font-poppins text-xl space-y-4 flex flex-col text-center mx-auto ">
