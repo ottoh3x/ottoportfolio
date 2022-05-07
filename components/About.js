@@ -14,7 +14,7 @@ import SkillsIcon from "./SkillsIcon";
 function About() {
   return (
     <>
-      <div className="flex flex-col justify-center  mx-auto lg:w-2/3 h-full p-6  my-6 space-y-6 bg-[#56565614] rounded-lg">
+      <div className="flex flex-col justify-center  mx-auto container h-full p-6  my-6 space-y-6 bg-[#56565614] rounded-lg shadow-lg">
         <div className="flex flex-col p-4">
           {" "}
           <h1 className="text-3xl bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-white to-green-700">

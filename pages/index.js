@@ -3,8 +3,7 @@ import Image from 'next/image'
 import About from '../components/About'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
-import styles from '../styles/Home.module.css'
-
+import Projects from "../components/Projects"
 export default function Home() {
   return (
     <div className="bg-black">
@@ -20,6 +19,10 @@ export default function Home() {
 <About />
 </section>
 <hr className='border-2 w-1/2 mx-auto border-gray-500 mb-12'></hr>
+<section className="mb-8 px-4">
+<Projects /></section>
+<hr className='border-2 w-1/2 mx-auto border-gray-500 mb-12'></hr>
+
 </div>
   )
 }

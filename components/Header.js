@@ -22,7 +22,7 @@ function Header() {
           <HeaderItem url={`home`} title="Home" />
           <HeaderItem url={`home`} title="About" />
           <HeaderItem url={`home`} title="Projects" />
-          <div className=" border-2 rounded-md bg-green-900 hover:bg-green-700">
+          <div className=" border-2 rounded-md border-green-500 hover:text-white">
             <HeaderItem url={`home`} title="Contact" />
           </div>
         </div>
