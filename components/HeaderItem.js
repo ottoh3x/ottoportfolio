@@ -1,9 +1,8 @@
 import React from 'react'
-import Link from 'next/link'
 
-function HeaderItem({url,title}) {
+function HeaderItem({title}) {
   return (
-    <div className="hover:text-green-300 bold text-gray-300 p-2"><Link href={url}>{title}</Link></div>
+    <div className="hover:text-green-300 bold cursor-pointer text-gray-300 p-2">{title}</div>
   )
 }
 

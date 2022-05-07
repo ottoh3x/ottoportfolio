@@ -1,14 +1,14 @@
-import Link from "next/link";
 import React from "react";
 import { useState } from "react";
 import HeaderItem from "./HeaderItem";
 import { FaQuestion, FaHome } from "react-icons/fa";
 import { MdWorkspacesFilled } from "react-icons/md";
 import { RiContactsFill } from "react-icons/ri";
+import {Link} from 'react-scroll'
 
 function Header() {
   const [show, setShow] = useState(false);
-
+ 
   const showNav = () => {
     setShow(!show);
   };
@@ -19,11 +19,17 @@ function Header() {
           OTTO PROGRAMMER
         </h2>
         <div className="hidden md:flex gap-4 ">
-          <HeaderItem url={`home`} title="Home" />
-          <HeaderItem url={`home`} title="About" />
-          <HeaderItem url={`home`} title="Projects" />
+        <Link activeClass="active" to="hero" spy={true} smooth={true} offset={-100} duration={500} >
+        <HeaderItem title="Home" />
+        </Link>
+        <Link activeClass="active" to="about" spy={true} smooth={true} offset={-100} duration={500} >
+
+          <HeaderItem title="About" /></Link>
+          <Link activeClass="active" to="projects" spy={true} smooth={true} offset={-100} duration={500} >
+
+          <HeaderItem title="Projects" /></Link>
           <div className=" border-2 rounded-md border-green-500 hover:text-white">
-            <HeaderItem url={`home`} title="Contact" />
+            <HeaderItem title="Contact" />
           </div>
         </div>
 
