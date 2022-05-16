@@ -1,6 +1,7 @@
 import React from "react";
 import Image from 'next/image'
 import {Link} from 'react-scroll'
+import {SiGithub,SiTwitter,SiInstagram,SiFacebook} from "react-icons/si"
 
 
 function Hero() {
@@ -9,7 +10,13 @@ function Hero() {
   return (
     <section className="bg-gradient-to-r from-[#1c502421] to-black p-4 " id="hero">
       {" "}
-      <div className="container relative h-52 lg:h-98 flex items-center mx-auto justify-between">
+      <div className="container relative h-64 lg:h-98 flex items-center mx-auto justify-between">
+      <div className="flex absolute bottom-0 w-full place-content-center space-x-4">
+          <div className="cursor-pointer hover:animate-bounce hover:brightness-150"><SiGithub size={32}/></div>
+          <div className="cursor-pointer text-sky-500 hover:brightness-150"><SiTwitter size={32}/></div>
+          <div className="cursor-pointer text-red-300 hover:brightness-150"><SiInstagram size={32}/></div>
+          <div className="cursor-pointer text-blue-600 hover:brightness-150	"><SiFacebook size={32} /></div>
+        </div>
         <div className="max-w-2xl">
         <h1 className="text-center text-3xl lg:text-5xl font-extrabold  text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-green-400 to-green-700">
           Building Projects For The Next Genration
@@ -26,10 +33,11 @@ function Hero() {
             <button className='cursor-pointer nav-dot h-7 w-7 block rounded-full border-4 active:bg-green-700 focus:bg-green-700  hover:bg-green-400 '></button></Link>
             <Link activeClass="active" to="projects" spy={true} smooth={true} offset={-100} duration={700} >
             <button className='cursor-pointer nav-dot h-7 w-7 block rounded-full border-4 active:bg-green-700 focus:bg-green-700  hover:bg-green-400'></button></Link>
-            <Link activeClass="active" to="hero" spy={true} smooth={true} offset={-100} duration={500} >
+            <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-100} duration={500} >
             <button className='cursor-pointer nav-dot h-7 w-7 active:bg-green-700 focus:bg-green-700 block rounded-full border-4   hover:bg-green-400'></button></Link>
             </div>
         </nav>
+        
       </div>
     </section>
   );
