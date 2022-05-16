@@ -12,8 +12,8 @@ function Projects() {
         <span className="rounded-full border-2 w-6 border-gray-400  "></span>
       </div>
       <div className="grid md:grid-cols-2 gap-4 lg:w-2/3 items-center mx-auto">
-      <ProjectsItem title="StreamAnimex" src="/anifaze.png" />
-      <ProjectsItem title="Anime Faze" src="/animex.png" />
+        <ProjectsItem title="StreamAnimex" src="/anifaze.png" />
+        <ProjectsItem title="Anime Faze" src="/animex.png" />
       </div>
     </div>
   );
