@@ -13,7 +13,9 @@ function Contact() {
 
       <form className="flex flex-col text-green-500 w-2/3 items-center mx-auto space-y-2">
         <label className="block">
-          <span class="block text-lg font-medium text-slate-500 p-1">Name</span>
+          <span className="block text-lg font-medium text-slate-500 p-1">
+            Name
+          </span>
 
           <input
             type="text"
@@ -26,7 +28,7 @@ function Contact() {
           />
         </label>
         <label className="block">
-          <span class="block text-lg font-medium text-slate-500 p-1">
+          <span className="block text-lg font-medium text-slate-500 p-1">
             Email
           </span>
           <input
@@ -41,7 +43,7 @@ function Contact() {
           />
         </label>
         <label className="block">
-          <span class="block text-lg font-medium text-slate-500 p-1">
+          <span className="block text-lg font-medium text-slate-500 p-1">
             Message
           </span>
 
