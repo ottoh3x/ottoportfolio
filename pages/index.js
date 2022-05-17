@@ -15,15 +15,15 @@ export default function Home() {
 
       <Header />
       <Hero />
-      <section className="mb-12 px-4 about">
+      <section className="mb-12 p-4 about">
         <About />
       </section>
       <hr className="border-2 w-1/2 mx-auto border-gray-500 mb-12"></hr>
-      <section className="mb-12 px-4 projects" id="projects">
+      <section className="mb-12 p-4 projects" id="projects">
         <Projects />
       </section>
       <hr className="border-2 w-1/2 mx-auto border-gray-500 mb-12"></hr>
-      <section className="contact mb-12 px-4">
+      <section className="contact mb-12 p-4">
         <Contact />
       </section>
     </div>

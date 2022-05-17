@@ -3,7 +3,7 @@ import ProjectsItem from "./ProjectsItem";
 
 function Projects() {
   return (
-    <div className="container mx-auto p-6  my-6 bg-[#56565614] rounded-lg shadow-lg">
+    <div className="container mx-auto p-6  my-6 border-2 border-gray-600  bg-[#ffffff05]  rounded-lg shadow-lg">
       <div className="flex flex-col p-4">
         {" "}
         <h1 className="text-3xl bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-white to-green-700">

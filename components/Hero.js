@@ -10,7 +10,7 @@ function Hero() {
   const closeMenu = () => setClick(false);
   return (
     <section
-      className="bg-gradient-to-r from-[#1c502421] to-black p-4 "
+      className="bg-black  border-b-2  border-gray-600 p-4 "
       id="hero"
     >
       {" "}
@@ -30,13 +30,11 @@ function Hero() {
           </div>
         </div>
         <div className="max-w-2xl">
-          <h1 className="text-center text-3xl lg:text-5xl font-extrabold  text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-green-400 to-green-700">
-            Building Projects For The Next Genration
+          <h1 className="text-center text-3xl p-4 lg:text-5xl font-extrabold  text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-green-400 to-green-700">
+            Design. Build. Improve
           </h1>
-          <p className="text-gray-400 text-8 p-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-            molestiae eos a quos suscipit dolorem sapiente fuga id minus
-            quaerat.
+          <p className="text-gray-400 text-center text-8 p-2">
+            I create beautiful websites your users will love.
           </p>
         </div>
         <div className="hidden md:inline">
