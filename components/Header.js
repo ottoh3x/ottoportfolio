@@ -15,7 +15,7 @@ function Header() {
   return (
     <>
       <div className="flex justify-between container mx-auto py-4 px-4 md:py-2 font-poppins text-xl text-gray-200 ">
-        <h2 className="text-xl md:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-200 to-green-600">
+        <h2 className="text-xl md:text-1xl lg:text-2xl place-self-center font-black text-transparent bg-clip-text bg-gradient-to-r from-green-200 to-green-600">
           OTTO PROGRAMMER
         </h2>
         <div className="hidden md:flex gap-4 ">
@@ -106,10 +106,46 @@ function Header() {
             <RiContactsFill size={28} />{" "}
           </div>
           <ul className="text-gray-300 font-poppins text-xl space-y-4 flex flex-col text-center mx-auto ">
-            <li className=""> Home</li>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Contact</li>
+          <Link
+            activeClass="active"
+            to="hero"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
+            <HeaderItem title="Home" />
+          </Link>
+          <Link
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
+            <HeaderItem title="About" />
+          </Link>
+          <Link
+            activeClass="active"
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
+            <HeaderItem title="Projects" />
+          </Link>
+          <Link
+            activeClass="active"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
+            <HeaderItem title="Contact" />
+          </Link>
           </ul>
         </div>
       </div>

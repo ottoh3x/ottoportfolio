@@ -8,6 +8,6 @@ body ,html{
     background : black;
 }
 
-.selected-circle {
+C {
     @apply bg-green-600 border-r-white 
 }

@@ -10,8 +10,8 @@ function Contact() {
         </h1>
         <span className="rounded-full border-2 w-6 border-gray-400  "></span>
       </div>
-
-      <form className="flex flex-col text-green-500 w-2/3 items-center mx-auto space-y-2">
+    <div className="grid md:grid-cols-2 p-[2rem] overflow-hidden">
+      <form className="grid justify-center text-green-500 items-center mx-auto space-y-2 ">
         <label className="block">
           <span className="block text-lg font-medium text-slate-500 p-1">
             Name
@@ -62,6 +62,9 @@ function Contact() {
           SEND
         </button>
       </form>
+      <div className="flex items-center">
+        <h1 className="text-white font-black text-4xl">OTTO PROGRAMMER</h1>
+      </div></div>
     </div>
   );
 }
