@@ -12,7 +12,7 @@ function ProjectsItem({ src, title, url }) {
         <p className="text-gray-400 p-2 text-center">
           An Ad Free Anime Streaming web app to give you a better experience.
         </p>
-        <a href={url} target="_blank">
+        <a href={url} target="_blank" rel="noopener noreferrer">
           <button
             href={url}
             target="_blank"
