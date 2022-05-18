@@ -11,7 +11,7 @@ function Contact() {
         <span className="rounded-full border-2 w-6 border-gray-400  "></span>
       </div>
       <form className="flex flex-col justify-center text-green-500 items-center mx-auto space-y-2 ">
-        <label className="block">
+        <label className="block w-full text-center">
           <span className="block text-lg font-medium text-slate-500 p-1">
             Name*
           </span>
@@ -20,11 +20,11 @@ function Contact() {
             type="text"
             name="name"
             id="name"
-            className="p-[0.4rem] bg-[#9d959514] max-w-[26rem] md:w-[26rem] focus:outline-none focus:border-green-500 focus:ring-1 focus:ring-green-500
+            className="p-[0.4rem] bg-[#9d959514] w-full md:w-[26rem] focus:outline-none focus:border-green-500 focus:ring-1 focus:ring-green-500
        border-2 border-gray-600"
           />
         </label>
-        <label className="block">
+        <label className="block w-full text-center">
           <span className="block text-lg font-medium text-slate-500 p-1">
             Email*
           </span>
@@ -32,12 +32,12 @@ function Contact() {
             type="email"
             name="email"
             id="email"
-            className="p-[0.4rem] bg-[#9d959514] max-w-[26rem] md:w-[26rem] focus:outline-none focus:border-green-500 focus:ring-1 focus:ring-green-500
+            className="p-[0.4rem] bg-[#9d959514] w-full md:w-[26rem] focus:outline-none focus:border-green-500 focus:ring-1 focus:ring-green-500
              border-2 border-gray-600"
             required
           />
         </label>
-        <label className="block">
+        <label className="block w-full text-center">
           <span className="block text-lg font-medium text-slate-500 p-1">
             Message*
           </span>
@@ -47,7 +47,7 @@ function Contact() {
             id="message"
             cols="36"
             rows="10"
-            className="p-[0.4rem] bg-[#9d959514] max-w-[26rem] md:w-[26rem] focus:outline-none focus:border-green-500 focus:ring-1 focus:ring-green-500
+            className="p-[0.4rem] bg-[#9d959514] w-full md:w-[26rem] focus:outline-none focus:border-green-500 focus:ring-1 focus:ring-green-500
        border-2 border-gray-600"
           ></textarea>
         </label>
