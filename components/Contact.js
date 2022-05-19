@@ -1,6 +1,21 @@
-import React from "react";
+import React,{useRef} from "react";
+import emailjs from 'emailjs-com';
 
 function Contact() {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_27otgd3', 'service_27otgd3', form.current, 'wRGAYlk4r9LSqyEFS')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
   return (
     <div className="container mx-auto p-6  my-6 border-2 border-gray-800 bg-[#ffffff05]  rounded-lg shadow-lg">
       <div className="flex flex-col p-4">
@@ -10,7 +25,7 @@ function Contact() {
         </h1>
         <span className="rounded-full border-2 w-6 border-gray-400  "></span>
       </div>
-      <form className="flex flex-col justify-center text-green-500 items-center mx-auto space-y-2 ">
+      <form ref={form} onSubmit={sendEmail} className="flex flex-col justify-center text-green-500 items-center mx-auto space-y-2 ">
         <label className="block w-full text-center">
           <span className="block text-lg font-medium text-slate-500 p-1">
             Name*
@@ -51,7 +66,7 @@ function Contact() {
        border-2 border-gray-600"
           ></textarea>
         </label>
-        <button className="bg-green-600 text-gray-200 p-3 my-2 text-center mx-auto hover:translate-y-[-0.1rem] transition-all ease-in-out duration-300 hover:shadow-2xl w-[9rem] bold text-lg hover:bg-green-700 hover:text-white">
+        <button type="submit" className="bg-green-600 text-gray-200 p-3 my-2 text-center mx-auto hover:translate-y-[-0.1rem] transition-all ease-in-out duration-300 hover:shadow-2xl w-[9rem] bold text-lg hover:bg-green-700 hover:text-white">
           SEND
         </button>
       </form>
