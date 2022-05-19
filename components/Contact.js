@@ -8,12 +8,13 @@ function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_27otgd3', 'service_27otgd3', form.current, 'wRGAYlk4r9LSqyEFS')
+    emailjs.sendForm('service_27otgd3', 'template_nu3nlna', form.current, 'wRGAYlk4r9LSqyEFS')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
           console.log(error.text);
       });
+      e.reset()
   };
 
   return (
