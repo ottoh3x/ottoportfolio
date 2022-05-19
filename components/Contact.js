@@ -14,7 +14,7 @@ function Contact() {
       }, (error) => {
           console.log(error.text);
       });
-      e.reset()
+      form.current.reset()
   };
 
   return (
