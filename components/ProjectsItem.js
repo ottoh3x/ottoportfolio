@@ -3,8 +3,8 @@ import Image from "next/image";
 
 function ProjectsItem({ src, title, url }) {
   return (
-    <div className="shadow-2xl ">
-      <div className="md:max-w-md bg-[#00000069] p-4 rounded-lg w-full hover:translate-y-[-0.2rem] transition-all ease-in-out duration-300 cursor-pointer">
+    
+      <div className="md:max-w-md bg-[#00000069] p-4 rounded-lg w-full hover:translate-y-[-0.2rem] transition-all ease-in-out duration-300 cursor-pointer shadow-2xl border-[1px] border-gray-600">
         <Image src={src} width={500} height={300} lazy="loading" />
         <h1 className="text-gray-100 p-2 font-bold text-3xl w-full mx-auto text-center">
           {title}
@@ -22,7 +22,7 @@ function ProjectsItem({ src, title, url }) {
           </button>
         </a>
       </div>
-    </div>
+    
   );
 }
 

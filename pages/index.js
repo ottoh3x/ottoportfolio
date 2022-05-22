@@ -4,6 +4,9 @@ import Contact from "../components/Contact";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Projects from "../components/Projects";
+import Services from "../components/Services";
+import Zoom from "react-reveal/Zoom";
+
 export default function Home() {
   return (
     <div className="bg-[##121212d1]">
@@ -14,18 +17,32 @@ export default function Home() {
       </Head>
 
       <Header />
+
       <Hero />
-      <section className="mb-12 p-2 about">
-        <About />
-      </section>
+
+      <Zoom>
+        <section className="mb-12 p-2 bg-[#ffffff05] about">
+          <About />
+        </section>
+      </Zoom>
       <hr className="border-2 w-1/2 mx-auto border-gray-500 mb-12"></hr>
-      <section className="mb-12 p-2 projects" id="projects">
-        <Projects />
-      </section>
-      <hr className="border-2 w-1/2 mx-auto border-gray-500 mb-12"></hr>
-      <section className="contact mb-12 p-2">
-        <Contact />
-      </section>
+      <Zoom>
+        <section className="mb-12 p-2 services" id="services">
+          <Services />
+        </section>
+        <hr className="border-2 w-1/2 mx-auto border-gray-500 mb-12"></hr>
+      </Zoom>
+      <Zoom>
+        <section className="mb-12 p-2 projects bg-[#ffffff05]" id="projects">
+          <Projects />
+        </section>
+        <hr className="border-2 w-1/2 mx-auto border-gray-500 mb-12"></hr>
+      </Zoom>
+      <Zoom>
+        <section className="contact mb-12 p-2">
+          <Contact />
+        </section>
+      </Zoom>
     </div>
   );
 }

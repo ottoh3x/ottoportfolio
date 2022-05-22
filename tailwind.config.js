@@ -9,7 +9,7 @@ module.exports = {
         98: "33rem",
       },
       fontFamily: {
-        body: ["Bebas Neue", "cursive"],
+        
       },
       zIndex : {
         100 : '99999'

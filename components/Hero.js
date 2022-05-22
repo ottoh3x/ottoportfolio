@@ -30,7 +30,7 @@ function Hero() {
           </div>
         </div>
         <div className="max-w-2xl">
-          <h1 className="text-center text-3xl p-4 lg:text-5xl font-extrabold  text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-green-400 to-green-700">
+          <h1 className="text-center text-4xl p-4 lg:text-5xl font-extrabold  text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-green-400 to-green-700">
             Design. Build. Improve
           </h1>
           <p className="text-gray-400 text-center text-8 p-2">
@@ -72,6 +72,17 @@ function Hero() {
               onClick={closeMenu}
             >
               <button className="cursor-pointer nav-dot h-7 w-7 block rounded-full border-4   hover:bg-green-400 "></button>
+            </Link>
+            <Link
+            activeClass="bg-green-400 rounded-full "
+              to="services"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+              onClick={closeMenu}
+            >
+              <button className="cursor-pointer nav-dot h-7 w-7  block rounded-full border-4   hover:bg-green-400"></button>
             </Link>
             <Link
             activeClass="bg-green-400 rounded-full "

@@ -13,7 +13,8 @@ function Header() {
     setShow(!show);
   };
   return (
-    <>
+    
+    <div className="w-full bg-[#050505] shadow-2xl">
       <div className="flex justify-between container mx-auto py-4 px-4 md:py-2 font-poppins text-xl text-gray-200 ">
         <h2 className="text-xl md:text-1xl lg:text-2xl place-self-center font-black text-transparent bg-clip-text bg-gradient-to-r from-green-200 to-green-600">
           OTTO PROGRAMMER
@@ -49,13 +50,26 @@ function Header() {
           >
             <HeaderItem title="Projects" />
           </Link>
-          <div className=" border-2 rounded-md border-green-500 hover:text-white">
+
+          <Link
+            activeClass="active"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
+            <div className=" border-2 rounded-sm border-green-500 hover:text-white">
             <HeaderItem title="Contact" />
-          </div>
+            </div>
+          </Link>
+
+
+          
         </div>
 
         <div
-          className="cursor-pointer md:hidden animate-bounce transition-all ease-out duration-500"
+          className="cursor-pointer md:hidden animate-pulse transition-all ease-out duration-500"
           onClick={showNav}
         >
           {!show ? (
@@ -149,7 +163,7 @@ function Header() {
           </ul>
         </div>
       </div>
-    </>
+          </div>
   );
 }
 

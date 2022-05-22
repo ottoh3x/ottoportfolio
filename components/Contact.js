@@ -18,7 +18,7 @@ function Contact() {
   };
 
   return (
-    <div className="container mx-auto p-6  my-6 border-2 border-gray-800 bg-[#ffffff05]  rounded-lg shadow-lg">
+    <div className="container mx-auto p-6  my-6  rounded-lg shadow-lg">
       <div className="flex flex-col p-4">
         {" "}
         <h1 className="text-3xl bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-white to-green-700">
@@ -26,6 +26,10 @@ function Contact() {
         </h1>
         <span className="rounded-full border-2 w-6 border-gray-400  "></span>
       </div>
+
+      <h1>Have any questions? Reach out to us from our contact form and we will get back to you shortly.
+
+</h1>
       <form ref={form} onSubmit={sendEmail} className="flex flex-col justify-center text-green-500 items-center mx-auto space-y-2 ">
         <label className="block w-full text-center">
           <span className="block text-lg font-medium text-slate-500 p-1">
