@@ -1,12 +1,12 @@
 import React from "react";
-import LightSpeed from "react-reveal/LightSpeed";
+import Zoom from "react-reveal/Zoom";
 import { MdImportantDevices } from "react-icons/md";
 import { FiDatabase } from "react-icons/fi";
 import { GoDeviceDesktop } from "react-icons/go";
 
 function Services() {
   return (
-    <LightSpeed right>
+    <Zoom>
       <div className="container mx-auto p-6  my-6 0  rounded-lg shadow-lg">
         <div className="flex flex-col p-4">
           {" "}
@@ -60,7 +60,7 @@ function Services() {
           </div>
         </div>
       </div>
-    </LightSpeed>
+    </Zoom>
   );
 }
 
