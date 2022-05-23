@@ -16,8 +16,8 @@ function Services() {
         </h1>
         <span className="rounded-full border-2 w-6 border-gray-400  "></span>
       </div>
-      <h1 className="text-gray-100 text-center text-2xl font-normal p-4 underline">What can i do for you</h1>
-      <div className="grid md:grid-cols-3 gap-4 lg:w-2/3  items-center mx-auto mt-8">
+      <h1 className="text-gray-100 text-center text-3xl font-normal p-2 "> ⬇━━━━━ What can i do for you? ━━━━━⬇ </h1>
+      <div className="grid md:grid-cols-3 gap-4 lg:w-2/3 items-center mx-auto mt-[2rem]">
         <div className="">
           <GoDeviceDesktop size={42} className="w-full text-green-500"/>
           <h1 className="text-gray-100 p-2 font-bold text-3xl w-full mx-auto text-center">

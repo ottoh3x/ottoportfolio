@@ -14,6 +14,8 @@ function Projects() {
         </h1>
         <span className="rounded-full border-2 w-6 border-gray-400  "></span>
       </div>
+      <h1 className="text-gray-100 text-center text-3xl font-normal p-4 ">⬇━━━━━ My latest Work. ━━━━━⬇</h1>
+
       <div className="grid md:grid-cols-2 gap-4 lg:w-2/3 items-center mx-auto">
         <ProjectsItem
           title="Anime Faze"

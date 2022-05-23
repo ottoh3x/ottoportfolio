@@ -36,7 +36,7 @@ function Contact() {
 </h1>
       <form ref={form} onSubmit={sendEmail} className="flex flex-col justify-center text-green-500 items-center mx-auto space-y-2 ">
         <label className="block w-full text-center">
-          <span className="block text-lg font-medium text-slate-500 p-1">
+          <span className="block text-lg font-medium text-slate-500 p-1 text-left">
             Name*
           </span>
 
@@ -49,7 +49,7 @@ function Contact() {
           />
         </label>
         <label className="block w-full text-center">
-          <span className="block text-lg font-medium text-slate-500 p-1">
+          <span className="block text-lg font-medium text-slate-500 p-1 text-left">
             Email*
           </span>
           <input
@@ -62,7 +62,7 @@ function Contact() {
           />
         </label>
         <label className="block w-full text-center">
-          <span className="block text-lg font-medium text-slate-500 p-1">
+          <span className="block text-lg font-medium text-slate-500 p-1 text-left">
             Message*
           </span>
 

@@ -70,7 +70,7 @@ function Header() {
             duration={500}
           >
             <div className=" border-2 rounded-sm border-green-500 hover:text-white bg-[#092513]">
-            <HeaderItem title="Contact" />
+            <HeaderItem title="Hire me" />
             </div>
           </Link>
 
