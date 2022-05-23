@@ -21,7 +21,7 @@ function Contact() {
 
   return (
     <Zoom>
-    <div className="container mx-auto p-6  my-6  rounded-lg shadow-lg">
+    <div className="container mx-auto p-2  my-6  rounded-lg shadow-lg">
       <div className="flex flex-col p-4">
         {" "}
         <h1 className="text-3xl bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-white to-green-700">

@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState,useRef,useEffect } from "react";
 import HeaderItem from "./HeaderItem";
 import { FaQuestion, FaHome } from "react-icons/fa";
 import { MdWorkspacesFilled } from "react-icons/md";
@@ -7,7 +7,31 @@ import { RiContactsFill } from "react-icons/ri";
 import { Link } from "react-scroll";
 
 function Header() {
-  const [show, setShow] = useState(false);
+  const menuRef = useRef(null);
+  const [listening, setListening] = useState(false);
+  const [show, setShow] = useState(false);  
+  const toggle = () => setShow(!show);
+
+  
+  function listenForOutsideClicks(listening, setListening, menuRef, setShow) {
+    return () => {
+      if (listening) return;
+      if (!menuRef.current) return;
+      setListening(true);
+      [`click`, `touchstart`].forEach((type) => {
+        document.addEventListener(`click`, (evt) => {
+          if (menuRef.current.contains(evt.target)) return;
+          setShow(false);
+        });
+      });
+    }
+  }
+  useEffect(listenForOutsideClicks(
+    listening,
+    setListening,
+    menuRef,
+    setShow,
+  ));
 
   const showNav = () => {
     setShow(!show);
@@ -78,9 +102,9 @@ function Header() {
           
         </div>
 
-        <div
+        <div ref={menuRef}
           className="cursor-pointer md:hidden animate-pulse transition-all ease-out duration-500"
-          onClick={showNav}
+          onClick={toggle}
         >
           {!show ? (
             <svg
@@ -120,16 +144,10 @@ function Header() {
           show
             ? "flex max-w-full z-100 overflow-y-scroll"
             : "max-w-0 overflow-hidden"
-        } h-56 left-0 top-16 '} w-full z-100 lg:hidden transition-all duration-1000 ease-in-out shadow-2xl bg-[#0a0909] text-gray-300 border-b-2 border-gray-800`}
+        } h-auto left-0 top-16 '} bg-[#040404] w-full z-100 lg:hidden transition-all duration-300 ease-in-out shadow-2xl bg-[#0a0909] text-gray-300 border-b-2 border-gray-800`}
       >
-        <div className="py-4 flex w-full">
-          <div className="text-gray-400 space-y-4 border-r-2 border-gray-800 px-4 ">
-            <FaHome size={28} />
-            <FaQuestion size={28} />
-            <MdWorkspacesFilled size={28} />
-            <RiContactsFill size={28} />{" "}
-          </div>
-          <ul className="text-gray-300 font-poppins text-xl space-y-4 flex flex-col text-center mx-auto ">
+          
+          <ul className="text-gray-300 font-poppins text-xl space-y-4 flex flex-col text-center mx-auto w-full">
           <Link
             activeClass="active"
             to="hero"
@@ -138,7 +156,7 @@ function Header() {
             offset={-100}
             duration={500}
           >
-            <HeaderItem title="Home" />
+            <li className="w-full p-2 border-b-[1px] border-gray-600">Home</li>
           </Link>
           <Link
             activeClass="active"
@@ -148,7 +166,16 @@ function Header() {
             offset={-100}
             duration={500}
           >
-            <HeaderItem title="About" />
+            <li className="w-full p-2 border-b-[1px] border-gray-600">About me</li>         </Link>
+            <Link
+            activeClass="active"
+            to="services"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
+            <li className="w-full p-2 border-b-[1px] border-gray-600">Services</li>
           </Link>
           <Link
             activeClass="active"
@@ -158,7 +185,7 @@ function Header() {
             offset={-100}
             duration={500}
           >
-            <HeaderItem title="Projects" />
+            <li className="w-full p-2 border-b-[1px] border-gray-600">Projects</li>
           </Link>
           <Link
             activeClass="active"
@@ -168,10 +195,10 @@ function Header() {
             offset={-100}
             duration={500}
           >
-            <HeaderItem title="Contact" />
+            <li className="w-full p-2 border-b-2">Hire me</li>
           </Link>
           </ul>
-        </div>
+        
       </div>
           </div>
   );
