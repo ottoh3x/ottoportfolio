@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import Image from "next/image";
 import Flip from "react-reveal/Flip";
 import { Link } from "react-scroll";
@@ -7,13 +7,31 @@ import { SiGithub, SiTwitter, SiInstagram, SiFacebook } from "react-icons/si";
 function Hero() {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
+  const [scrollY, setScrollY] = useState(0);
 
-  const closeMenu = () => setClick(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+
+    handleScroll();
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    }})
+
+    const closeMenu = () => setClick(false);
+    const scrollUp = () => {
+    window.scrollTo({
+      top: 0,
+      left:0,
+      behavior: "smooth",
+    });
+  };
   return (
-    <section
-      className="bg-black  border-b-2  border-gray-600 p-4 "
-      id="hero"
-    >
+    <section className="bg-black  border-b-2  border-gray-600 p-4 " id="hero">
       {" "}
       <div className="container relative h-64 lg:h-98 flex items-center mx-auto justify-between">
         <div className="flex absolute bottom-0 w-full place-content-center space-x-4">
@@ -31,19 +49,37 @@ function Hero() {
           </div>
         </div>
         <Flip top>
-        <div className="max-w-2xl">
-          <h1 className="text-center text-4xl p-4 lg:text-5xl font-extrabold  text-transparent bg-clip-text bg-gradient-to-r from-[#5ffffa] via-green-400 to-green-700">
-            Design. Build. Improve
-          </h1>
-          <p className="text-gray-400 text-center text-8 p-2">
-            I create beautiful websites your users will love.
-          </p>
-        </div>
-        
-        <div className="hidden md:inline">
-          <Image src="/bg.png" alt="bg" width={500} height={500} />
-        </div>
+          <div className="max-w-2xl">
+            <h1 className="text-center text-4xl p-4 lg:text-5xl font-extrabold  text-transparent bg-clip-text bg-gradient-to-r from-[#5ffffa] via-green-400 to-green-700">
+              Design. Build. Improve
+            </h1>
+            <p className="text-gray-400 text-center text-8 p-2">
+              I create beautiful websites your users will love.
+            </p>
+          </div>
+
+          <div className="hidden md:inline">
+            <Image src="/bg.png" alt="bg" width={500} height={500} />
+          </div>
         </Flip>
+
+        {scrollY >= 300 ? <Flip bottom><div className="fixed right-6 bottom-4 p-3 z-100 animate-pulse cursor-pointer " onClick={scrollUp}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-10 w-10 text-gray-200 "
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth="2"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M9 11l3-3m0 0l3 3m-3-3v8m0-13a9 9 0 110 18 9 9 0 010-18z"
+            />
+          </svg>
+        </div></Flip> : ""}
+        
 
         <nav
           className={
@@ -67,7 +103,7 @@ function Hero() {
               ></button>
             </Link>
             <Link
-            activeClass="bg-green-400 rounded-full "
+              activeClass="bg-green-400 rounded-full "
               to="about"
               spy={true}
               smooth={true}
@@ -78,7 +114,7 @@ function Hero() {
               <button className="cursor-pointer nav-dot h-7 w-7 block rounded-full border-4   hover:bg-green-400 "></button>
             </Link>
             <Link
-            activeClass="bg-green-400 rounded-full "
+              activeClass="bg-green-400 rounded-full "
               to="services"
               spy={true}
               smooth={true}
@@ -89,7 +125,7 @@ function Hero() {
               <button className="cursor-pointer nav-dot h-7 w-7  block rounded-full border-4   hover:bg-green-400"></button>
             </Link>
             <Link
-            activeClass="bg-green-400 rounded-full "
+              activeClass="bg-green-400 rounded-full "
               to="projects"
               spy={true}
               smooth={true}
@@ -100,7 +136,7 @@ function Hero() {
               <button className="cursor-pointer nav-dot h-7 w-7 block rounded-full border-4   hover:bg-green-400"></button>
             </Link>
             <Link
-            activeClass="bg-green-400 rounded-full "
+              activeClass="bg-green-400 rounded-full "
               to="contact"
               spy={true}
               smooth={true}

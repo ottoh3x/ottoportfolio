@@ -1,9 +1,6 @@
 import React from "react";
 import { useState,useRef,useEffect } from "react";
 import HeaderItem from "./HeaderItem";
-import { FaQuestion, FaHome } from "react-icons/fa";
-import { MdWorkspacesFilled } from "react-icons/md";
-import { RiContactsFill } from "react-icons/ri";
 import { Link } from "react-scroll";
 
 function Header() {

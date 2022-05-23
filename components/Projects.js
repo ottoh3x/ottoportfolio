@@ -13,7 +13,7 @@ function Projects() {
           </h1>
           <span className="rounded-full border-2 w-6 border-gray-400  "></span>
         </div>
-        <h1 className="text-gray-100 text-center text-3xl font-normal p-4 ">
+        <h1 className="text-gray-400 text-center text-3xl font-normal p-4 animate-pulse mb-8">
           My latest Work.
         </h1>
 
