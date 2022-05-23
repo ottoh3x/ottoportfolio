@@ -42,6 +42,16 @@ function Header() {
           </Link>
           <Link
             activeClass="active"
+            to="services"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
+            <HeaderItem title="Services" />
+          </Link>
+          <Link
+            activeClass="active"
             to="projects"
             spy={true}
             smooth={true}
@@ -59,7 +69,7 @@ function Header() {
             offset={-100}
             duration={500}
           >
-            <div className=" border-2 rounded-sm border-green-500 hover:text-white">
+            <div className=" border-2 rounded-sm border-green-500 hover:text-white bg-[#092513]">
             <HeaderItem title="Contact" />
             </div>
           </Link>

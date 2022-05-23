@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
+import Flip from "react-reveal/Flip";
 import { Link } from "react-scroll";
 import { SiGithub, SiTwitter, SiInstagram, SiFacebook } from "react-icons/si";
 
@@ -29,6 +30,7 @@ function Hero() {
             <SiFacebook size={32} />
           </div>
         </div>
+        <Flip top>
         <div className="max-w-2xl">
           <h1 className="text-center text-4xl p-4 lg:text-5xl font-extrabold  text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-green-400 to-green-700">
             Design. Build. Improve
@@ -37,9 +39,11 @@ function Hero() {
             I create beautiful websites your users will love.
           </p>
         </div>
+        
         <div className="hidden md:inline">
           <Image src="/bg.png" alt="bg" width={500} height={500} />
         </div>
+        </Flip>
 
         <nav
           className={

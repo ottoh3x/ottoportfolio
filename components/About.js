@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "next/image";
+import Zoom from "react-reveal/Zoom";
+
 import {
   SiNextdotjs,
   SiReact,
@@ -13,7 +15,7 @@ import {
 import SkillsIcon from "./SkillsIcon";
 function About() {
   return (
-    <>
+    <Zoom>
       <div className="flex flex-col justify-center  mx-auto container h-full p-6  my-6 space-y-6 rounded-lg shadow-lg">
         <div className="flex flex-col p-4">
           {" "}
@@ -34,7 +36,7 @@ function About() {
           <span className="rounded-full border-2 w-6 border-gray-400   "></span>
         </div>
 
-        <div className="text-gray-500 text-5xl  w-full grid grid-cols-4 gap-y-4 place-items-center md:w-1/2 mx-auto justify-between ">
+        <div className="text-gray-500 text-5xl  w-full grid grid-cols-4 gap-y-4 place-items-center md:w-2/5 mx-auto justify-between ">
           <SkillsIcon icon={<SiNextdotjs />} />
           <SkillsIcon icon={<SiReact />} />
           <SkillsIcon icon={<SiJavascript />} />
@@ -45,7 +47,8 @@ function About() {
           <SkillsIcon icon={<SiTailwindcss />} />
         </div>
       </div>
-    </>
+  
+    </Zoom>
   );
 }
 

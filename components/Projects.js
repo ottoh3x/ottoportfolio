@@ -1,8 +1,11 @@
 import React from "react";
 import ProjectsItem from "./ProjectsItem";
+import Roll from "react-reveal/Roll";
+
 
 function Projects() {
   return (
+    <Roll top>
     <div className="container mx-auto p-6  my-6  rounded-lg shadow-lg">
       <div className="flex flex-col p-4">
         {" "}
@@ -24,6 +27,7 @@ function Projects() {
         />
       </div>
     </div>
+    </Roll>
   );
 }
 
