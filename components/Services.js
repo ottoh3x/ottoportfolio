@@ -20,7 +20,7 @@ function Services() {
           What can i do for you?{" "}
         </h1>
         <div className="grid md:grid-cols-3 gap-4 lg:w-4/5 items-center mx-auto mt-[2rem] py-12">
-          <div className="md:border-r-[1px] border-gray-600 md:h-[15rem]">
+          <div className="md:border-r-[1px] border-gray-600 lg:h-[15rem]">
             <GoDeviceDesktop size={42} className="w-full text-green-500" />
             <h1 className="text-gray-100 p-2 font-bold text-3xl w-full mx-auto text-center">
               Web Development
@@ -31,7 +31,7 @@ function Services() {
               track of time while doing our jobs.
             </p>
           </div>
-          <div className="md:border-r-[1px] border-gray-600 md:h-[15rem]">
+          <div className="md:border-r-[1px] border-gray-600 lg:h-[15rem]">
             <div>
               <FiDatabase size={42} className="w-full text-green-500" />
               <h1 className="text-gray-100 p-2 font-bold text-3xl w-full mx-auto text-center">
@@ -44,7 +44,7 @@ function Services() {
               and hot computer, let us worry about that for you.
             </p>
           </div>
-          <div className="md:h-[15rem]">
+          <div className="lg:h-[15rem]">
             <div>
               <MdImportantDevices size={42} className="w-full text-green-500" />
               <h1 className="text-gray-100 p-2 font-bold text-3xl w-full mx-auto text-center">
@@ -52,10 +52,7 @@ function Services() {
               </h1>
             </div>
             <p className="text-gray-400 p-2 font-custom2 font-extralight leading-relaxed text-center">
-              Responsive web design or responsive design is an approach to web
-              design that aims to make web pages render well on a variety of
-              devices and window or screen sizes from minimum to maximum display
-              size to ensure usability and satisfaction.
+              Responsive web design aims to make web pages render well on a variety of devices and screen sizes from minimum to maximum display size to ensure usability and satisfaction.
             </p>
           </div>
         </div>
