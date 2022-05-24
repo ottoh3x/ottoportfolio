@@ -2,14 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url("/BebasNeue-Regular.ttf")
+  }
+  
+  @font-face {
+    font-family: 'Montserrat';
+    src: url("/Montserrat-VariableFont_wght.ttf")
+  }
 body ,html{
     background : black;
-    font-family: 'Koulen', sans-serif;
-
+    font-family: 'Roboto', sans-serif;
 }
 
 C {
     @apply bg-green-600 border-r-white 
+}
+
+#hero {
+    background: url('/hero.png');
+    background-position-y: 73%;
+    background-color: #000000ee;
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position-x: 70%;
+    
+}
+
+section {
+    border-bottom: solid 1px white
 }

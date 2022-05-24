@@ -37,7 +37,7 @@ function Header() {
     
     <div className="w-full bg-[#050505] shadow-2xl">
       <div className="flex justify-between container mx-auto py-4 px-4 md:py-2 font-poppins text-xl text-gray-200 ">
-        <h2 className="text-xl md:text-1xl lg:text-2xl place-self-center font-black text-transparent bg-clip-text bg-gradient-to-r from-green-200 to-green-600">
+        <h2 className="text-2xl md:text-1xl lg:text-3xl place-self-center font-black  font-custom1 tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-green-600 cursor-pointer">
           OTTO PROGRAMMER
         </h2>
         <div className="hidden md:flex gap-4 ">

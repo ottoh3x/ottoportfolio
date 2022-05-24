@@ -17,7 +17,7 @@ function Projects() {
           My latest Work.
         </h1>
 
-        <div className="grid md:grid-cols-2 gap-4 lg:w-2/3 items-center mx-auto">
+        <div className="grid md:grid-cols-2 gap-4 lg:w-2/3 items-center mx-auto py-10">
           <ProjectsItem
             title="Anime Faze"
             src="/anifaze.png"

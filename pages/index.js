@@ -19,19 +19,19 @@ export default function Home() {
       <Header />
 
       <Hero />
-        <section className="mb-12 p-2 bg-[#ffffff05] about">
+        <section className=" p-2 bg-[#ffffff05] about">
           <About />
         </section>
       
-        <section className="mb-12 p-2 services" id="services">
+        <section className=" p-2 services" id="services">
           <Services />
         </section>
         
-        <section className="mb-12 p-2 projects bg-[#ffffff05]" id="projects">
+        <section className=" p-2 projects bg-[#ffffff05]" id="projects">
           <Projects />
         </section>
         
-        <section className="contact mb-12 p-2">
+        <section className="contact p-2">
           <Contact />
         </section>
         <Footer />

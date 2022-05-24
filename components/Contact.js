@@ -30,7 +30,7 @@ function Contact() {
         <span className="rounded-full border-2 w-6 border-gray-400  "></span>
       </div>
 
-<div className="flex flex-col lg:flex-row w-full lg:w-5/6 justify-between mx-auto">
+<div className="flex flex-col lg:flex-row w-full lg:w-5/6 justify-between mx-auto py-10">
       <h1 className="text-gray-200 text-2xl lg:p-6 mt-6 lg:w-7/12">Have any questions? Reach out to us from our contact form and we will get back to you shortly.
 
 </h1>
