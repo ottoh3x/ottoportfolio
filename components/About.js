@@ -27,7 +27,7 @@ function About() {
           <img className="object-contain mx-auto max-w-max w-60 border-2 border-gray-600 rounded-full" src="/pfp.png" />
         <p className="text-gray-400 text-xl text-center font-custom2 font-extralight leading-relaxed
  md:w-1/2 mx-auto">
-        Hello, Hi i'm OTTO Programmer.I'm a Freelance Full Stack Devoloper Based in Morocco,and I'm very passionate and dedicated to my work.With 3 years experience as a professional Full Stack Devoloper. I have acquired the skills necessary to build great and premium websites.
+        Hi i'm OTTO Programmer.I'm a Freelance Full Stack Devoloper Based in Morocco,and I'm very passionate and dedicated to my work.With 3 years experience as a professional Full Stack Devoloper. I have acquired the skills necessary to build great and premium websites.
         </p>
         <div className="flex flex-col p-4">
           {" "}
