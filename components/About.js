@@ -16,7 +16,7 @@ import SkillsIcon from "./SkillsIcon";
 function About() {
   return (
     <Zoom>
-      <div className="flex flex-col justify-center  mx-auto container h-full p-6  my-6 space-y-6 rounded-lg shadow-lg">
+      <div className="flex flex-col justify-center relative  mx-auto container h-full p-6  my-6 space-y-6 rounded-lg shadow-lg">
         <div className="flex flex-col p-4">
           {" "}
           <h1 className="text-3xl font-bold text-[#01d634]">
@@ -48,6 +48,8 @@ function About() {
           <SkillsIcon icon={<SiTailwindcss />} />
         </div>
       </div>
+
+      
   
     </Zoom>
   );

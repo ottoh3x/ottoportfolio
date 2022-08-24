@@ -1,20 +1,16 @@
-import React from 'react'
-import ReactPlayer from 'react-player'
-
+import React from "react";
+import ReactPlayer from "react-player";
 
 function Bein() {
   return (
     <div>
-        <ReactPlayer
-          className='react-player'
-          url='https://rodentia.boxcast.com/muskrat/nkv4uckn4ggsbhe742oe/480p-ext.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9yb2RlbnRpYS5ib3hjYXN0LmNvbS9tdXNrcmF0L25rdjR1Y2tuNGdnc2JoZTc0Mm9lLzQ4MHAtZXh0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2NjA2MDQ4NTd9fX1dfQ__&Signature=QJuL71rrJIHekfuhxArMivatdvIk3Vha3nILyXtiWgyZaSopodMbZpmzEqrbHNyqYS~HSi8P8PY~sac0zu7e5yeB4AjIm7GTqMhTJEQePBmxCf8QzOS1XgJerzDIgQ-z4mkquW~uR9Ni~I4n-8IC~OZYlJskrla~V0AcruHRQFxJ8Fw4B9BgCLq6P0IRl2CAJWlcRwbHZoaEnQBgiuKbHyd3MkiZAUkC0qW0BdF70RaiXUDJjUnTBvt83tlSmvcZ00UYA6~aVO3rPd9A6QcXaEJNHrKkh2nNdg0ojM2V9HlpAe4e-dA3TTiAvPOyO3EJwwhOEZfJGoWMqxwqPyWbZQ__&Key-Pair-Id=APKAJ7GUCBQUK6NTWZCA'
-          width='600'
-          height='400'
-  controls
-  autoPlay
-        />
+     <div className="custom-shape-divider-bottom-1661380366">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+    </svg>
+</div>
     </div>
-  )
+  );
 }
 
-export default Bein
+export default Bein;
