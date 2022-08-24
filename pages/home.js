@@ -4,7 +4,7 @@ import Fade from 'react-reveal/Fade';
 
 function Landing() {
   return (
-    <div className="landing">
+    <div className="landing relative">
          <div className="h-full">
       <div className="w-full container mx-auto">
         <div className="w-full flex items-center justify-between">
