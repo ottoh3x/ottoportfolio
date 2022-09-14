@@ -3,6 +3,7 @@ import { useState,useRef,useEffect } from "react";
 import HeaderItem from "./HeaderItem";
 import { Link } from "react-scroll";
 import Image from "next/image";
+import {motion} from "framer-motion"
 
 
 function Header() {
@@ -19,7 +20,7 @@ function Header() {
       setListening(true);
       [`click`, `touchstart`].forEach((type) => {
         document.addEventListener(`click`, (evt) => {
-          if (menuRef.current.contains(evt.target)) return;
+          if (menuRef?.current?.contains(evt.target)) return;
           setShow(false);
         });
       });
@@ -37,12 +38,15 @@ function Header() {
   };
   return (
     
-    <div className="w-full bg-[#050505] shadow-2xl">
-      <div className="flex justify-between container mx-auto py-3 px-4 md:py-2 items-center font-poppins text-xl text-gray-200 ">
+    <div className="w-full  shadow-2xl  drop-shadow-2xl">
+      <motion.div 
+      initial={{y:"-100vh"}}
+      animate={{y:0,transition:{type:"spring",stiffness:180,duration:0.3}}}
+      className="flex justify-between container  mx-auto py-3 px-4 md:py-2 items-center font-poppins text-xl text-gray-200 ">
              
-        <Image src="/op.png" height={40} width={120} objectFit="contain" />
+        <Image src="/op.png" height={40} width={120} objectFit="cover" />
       
-        <div className="hidden md:flex gap-4 ">
+        <div className="hidden md:flex items-center gap-4 ">
           <Link
             activeClass="active"
             to="hero"
@@ -92,9 +96,11 @@ function Header() {
             offset={-100}
             duration={500}
           >
-            <div className=" border-2 rounded-sm border-green-500 hover:text-white bg-[#092513]">
-            <HeaderItem title="Hire me" />
-            </div>
+            <motion.div 
+            whileHover={{scale:1.1,textColor:"white",transition : {type:'spring',stiffness:150,  yoyo:Infinity,duration:0.3,ease:"easeOut"}}}
+            className=" border-[2px] py-2 px-3  border-[#3b394a]  hover:text-white ">
+            <HeaderItem title="Contact" />
+            </motion.div>
           </Link>
 
 
@@ -137,7 +143,7 @@ function Header() {
             </svg>
           )}
         </div>
-      </div>
+      </motion.div>
       <div
         className={`absolute ${
           show

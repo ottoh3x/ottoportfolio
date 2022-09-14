@@ -2,8 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
 @font-face {
     font-family: 'Bebas Neue';
     src: url("/BebasNeue-Regular.ttf")
@@ -14,48 +13,46 @@
     src: url("/Montserrat-VariableFont_wght.ttf")
   }
   html {
-    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: 'Roboto', sans-serif;
   }
 
-  .landing {
-    background: url("/header.png");
-  }
-
+ 
 
 C {
     @apply bg-green-600 border-r-white 
 }
 
-#hero {
-    background: url('/hero.png');
-    background-position-y: 73%;
-    background-color: #000000ee;
-    background-blend-mode: overlay;
-    background-size: cover;
-    background-position-x: 70%;
-    
-}
+
 
 section {
     border-bottom: solid 1px rgba(255, 255, 255, 0.137)
 }
 
-.custom-shape-divider-bottom-1661380366 {
+.custom-shape-divider-bottom-1663156861 {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   overflow: hidden;
   line-height: 0;
+  transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1661380366 svg {
+.custom-shape-divider-bottom-1663156861 svg {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 93px;
+  height: 41px;
 }
 
 .custom-shape-divider-bottom-1661380366 .shape-fill {
   fill: #050505;
+}
+
+.portfolio {
+  background: linear-gradient(90deg, rgba(9,12,38,1) 0%, rgb(18 18 18) 35%, rgb(0 0 0) 62%, rgb(9 9 18) 100%);
+  font-family: 'Poppins', sans-serif;
+
+  
+
 }

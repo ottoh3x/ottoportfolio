@@ -7,23 +7,32 @@ import Hero from "../components/Hero";
 import Projects from "../components/Projects";
 import Services from "../components/Services";
 import Landing from "./home";
-
+import { useEffect, useState } from "react";
+import Scroll from "../components/Scroll";
 export default function Home() {
+ 
+
+ 
   return (
-    <div className="leading-normal bg-black tracking-normal text-indigo-400 bg-cover bg-fixed">
+    <div className="portfolio leading-normal relative tracking-normal text-indigo-400 bg-cover bg-fixed">
       <Head>
         <title>OTTO PROGRAMMER</title>
         <meta name="description" content="Otto Programmer Portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Landing />
+      <Scroll />
+
+      
+      
+      <Hero />
         <section className=" p-2 bg-[#ffffff05] about">
           <About />
         </section>
       
-        <section className=" p-2 services" id="services">
+        <section className=" p-2 services " id="services">
           <Services />
+
         </section>
         
         <section className=" p-2 projects bg-[#ffffff05]" id="projects">

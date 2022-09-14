@@ -6,12 +6,11 @@ function Projects() {
   return (
     <Zoom>
       <div className="container mx-auto p-6  my-6  rounded-lg shadow-lg">
-        <div className="flex flex-col p-4">
+        <div className="flex flex-col items-center p-4">
           {" "}
-          <h1 className="text-3xl font-bold text-[#01d634]">
+          <h1 className="text-5xl font-black text-white">
             Projects
           </h1>
-          <span className="rounded-full border-2 w-6 border-gray-400  "></span>
         </div>
         <h1 className="text-gray-400 text-center text-3xl font-normal p-4 animate-pulse mb-8">
           My latest Work.
@@ -30,6 +29,7 @@ function Projects() {
           />
         </div>
       </div>
+        
     </Zoom>
   );
 }

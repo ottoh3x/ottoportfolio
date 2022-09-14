@@ -16,7 +16,7 @@ function ProjectsItem({ src, title, url }) {
           <button
             href={url}
             target="_blank"
-            className="bg-green-600 text-gray-200 p-3 my-2 text-center mx-auto w-full hover:translate-y-[-0.1rem] transition-all ease-in-out duration-200 hover:shadow-2xl hover:bg-green-700 hover:text-white"
+            className="border-[2px] hover:scale-105 border-[#008bff] text-gray-200 p-3 my-2 text-center mx-auto w-full  transition-all ease-in-out duration-200 hover:shadow-2xl hover:bg-[#008bff] hover:text-white"
           >
             Visit Website
           </button>
