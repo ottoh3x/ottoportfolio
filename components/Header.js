@@ -1,18 +1,16 @@
 import React from "react";
-import { useState,useRef,useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import HeaderItem from "./HeaderItem";
 import { Link } from "react-scroll";
 import Image from "next/image";
-import {motion} from "framer-motion"
-
+import { motion } from "framer-motion";
 
 function Header() {
   const menuRef = useRef(null);
   const [listening, setListening] = useState(false);
-  const [show, setShow] = useState(false);  
+  const [show, setShow] = useState(false);
   const toggle = () => setShow(!show);
 
-  
   function listenForOutsideClicks(listening, setListening, menuRef, setShow) {
     return () => {
       if (listening) return;
@@ -24,28 +22,25 @@ function Header() {
           setShow(false);
         });
       });
-    }
+    };
   }
-  useEffect(listenForOutsideClicks(
-    listening,
-    setListening,
-    menuRef,
-    setShow,
-  ));
+  useEffect(listenForOutsideClicks(listening, setListening, menuRef, setShow));
 
   const showNav = () => {
     setShow(!show);
   };
   return (
-    
     <div className="w-full  shadow-2xl  drop-shadow-2xl">
-      <motion.div 
-      initial={{y:"-100vh"}}
-      animate={{y:0,transition:{type:"spring",stiffness:180,duration:0.3}}}
-      className="flex justify-between container  mx-auto  px-4  items-center font-poppins text-xl text-gray-200 ">
-             
+      <motion.div
+        initial={{ y: "-100vh" }}
+        animate={{
+          y: 0,
+          transition: { type: "spring", stiffness: 180, duration: 0.3 },
+        }}
+        className="flex justify-between container  mx-auto  px-4  items-center font-poppins text-xl text-gray-200 "
+      >
         <Image src="/Ghost.svg" height={40} width={120} objectFit="contain" />
-      
+
         <div className="hidden md:flex items-center gap-4 ">
           <Link
             activeClass="active"
@@ -96,18 +91,27 @@ function Header() {
             offset={-100}
             duration={500}
           >
-            <motion.div 
-            whileHover={{scale:1.1,textColor:"white",transition : {type:'spring',stiffness:150,  yoyo:Infinity,duration:0.3,ease:"easeOut"}}}
-            className=" border-[2px] py-2 px-3  border-[#3b394a]  hover:text-white ">
-            <HeaderItem title="Contact" />
+            <motion.div
+              whileHover={{
+                scale: 1.1,
+                textColor: "white",
+                transition: {
+                  type: "spring",
+                  stiffness: 150,
+                  yoyo: Infinity,
+                  duration: 0.3,
+                  ease: "easeOut",
+                },
+              }}
+              className=" border-[2px] py-2 px-3  border-[#3b394a]  hover:text-white "
+            >
+              <HeaderItem title="Contact" />
             </motion.div>
           </Link>
-
-
-          
         </div>
 
-        <div ref={menuRef}
+        <div
+          ref={menuRef}
           className="cursor-pointer md:hidden animate-pulse transition-all ease-out duration-500"
           onClick={toggle}
         >
@@ -151,8 +155,7 @@ function Header() {
             : "max-w-0 overflow-hidden"
         } h-auto left-0 top-16 '} bg-[#040404] w-full z-100 lg:hidden transition-all duration-300 ease-in-out shadow-2xl bg-[#0a0909] text-gray-300 border-b-2 border-gray-800`}
       >
-          
-          <ul className="text-gray-300 font-poppins text-xl space-y-4 flex flex-col text-center mx-auto w-full">
+        <ul className="text-gray-300 font-poppins text-xl space-y-4 flex flex-col text-center mx-auto w-full">
           <Link
             activeClass="active"
             to="hero"
@@ -171,8 +174,11 @@ function Header() {
             offset={-100}
             duration={500}
           >
-            <li className="w-full p-2 border-b-[1px] border-gray-600">About me</li>         </Link>
-            <Link
+            <li className="w-full p-2 border-b-[1px] border-gray-600">
+              About me
+            </li>{" "}
+          </Link>
+          <Link
             activeClass="active"
             to="services"
             spy={true}
@@ -180,7 +186,9 @@ function Header() {
             offset={-100}
             duration={500}
           >
-            <li className="w-full p-2 border-b-[1px] border-gray-600">Services</li>
+            <li className="w-full p-2 border-b-[1px] border-gray-600">
+              Services
+            </li>
           </Link>
           <Link
             activeClass="active"
@@ -190,7 +198,9 @@ function Header() {
             offset={-100}
             duration={500}
           >
-            <li className="w-full p-2 border-b-[1px] border-gray-600">Projects</li>
+            <li className="w-full p-2 border-b-[1px] border-gray-600">
+              Projects
+            </li>
           </Link>
           <Link
             activeClass="active"
@@ -202,10 +212,9 @@ function Header() {
           >
             <li className="w-full p-2 border-b-2">Hire me</li>
           </Link>
-          </ul>
-        
+        </ul>
       </div>
-          </div>
+    </div>
   );
 }
 
