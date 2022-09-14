@@ -35,11 +35,12 @@ function Contact() {
           <h1 className="text-5xl font-black text-white">Contact</h1>
         </div>
 
-        <div className="flex flex-col w-full lg:w-5/6 justify-between mx-auto text-center">
-          <div className="p-4">
-            <h1 className="text-gray-400 text-2xl lg:p-6 mt-6 lg:w-7/12">
+        <div className="flex flex-col w-full  justify-between mx-auto ">
+          <div className="p-2 ">
+            <h1 className="text-gray-400 mx-auto text-2xl mt-6 lg:w-7/12">
               I am available for full time, part time and freelance work.
-              Connect with me via email: <span className="text-gray-200">ottoprogrammer@gmail.com</span>.
+              Connect with me via email:{" "}
+              <span className="text-gray-200">ottoprogrammer@gmail.com</span>.
             </h1>
           </div>
           <form

@@ -3,7 +3,7 @@ import Zoom from "react-reveal/Zoom";
 import { MdOutlineDesignServices } from "react-icons/md";
 import { FiDatabase } from "react-icons/fi";
 import { GoDeviceDesktop } from "react-icons/go";
-import {motion} from "framer-motion"
+import { motion } from "framer-motion";
 function Services() {
   return (
     <Zoom>
@@ -17,7 +17,11 @@ function Services() {
           What can i do for you?{" "}
         </h1>
         <div className="grid md:grid-cols-3 gap-4 lg:w-4/5 items-center mx-auto mt-[2rem] py-12 ">
-          <motion.div initial={{x:"100vh"}} animate={{x:0}} className="bg-[#09090ebf] h-full drop-shadow-2xl cursor-pointer px-3 py-6 rounded-lg hover:bg-gradient-to-r from-cyan-500 text-gray-400 to-blue-500 transition-all ease-in-out	hover:text-white duration-700	hover:-translate-y-1 ">
+          <motion.div
+            initial={{ x: "-100vh" }}
+            whileInView={{ x: 0 }}
+            className="bg-[#09090ebf] h-full drop-shadow-2xl cursor-pointer px-3 py-6 rounded-lg hover:bg-gradient-to-r from-cyan-500 text-gray-400 to-blue-500 transition-all ease-in-out	hover:text-white duration-700	hover:-translate-y-1 "
+          >
             <GoDeviceDesktop size={42} className="w-full text-[#007bff]" />
             <h1 className="text-gray-100 p-2 font-bold text-3xl w-full mx-auto text-center">
               Web Development

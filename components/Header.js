@@ -42,9 +42,9 @@ function Header() {
       <motion.div 
       initial={{y:"-100vh"}}
       animate={{y:0,transition:{type:"spring",stiffness:180,duration:0.3}}}
-      className="flex justify-between container  mx-auto py-3 px-4 md:py-2 items-center font-poppins text-xl text-gray-200 ">
+      className="flex justify-between container  mx-auto  px-4  items-center font-poppins text-xl text-gray-200 ">
              
-        <Image src="/op.png" height={40} width={120} objectFit="cover" />
+        <Image src="/Ghost.svg" height={40} width={120} objectFit="contain" />
       
         <div className="hidden md:flex items-center gap-4 ">
           <Link

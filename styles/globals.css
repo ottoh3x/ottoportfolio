@@ -56,3 +56,9 @@ section {
   
 
 }
+
+#hero{
+  background: linear-gradient(rgb(0 0 0 / 83%),rgb(0 0 0)) ,url(https://wallpaperaccess.com/full/1111946.jpg);
+  background-size:cover;
+  background-position:center center;
+}

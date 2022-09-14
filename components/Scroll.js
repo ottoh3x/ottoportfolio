@@ -51,7 +51,7 @@ function Scroll() {
             <button
               className={`cursor-pointer  nav-dot h-7 w-7 block rounded-full border-4 hover:bg-[#007bff] active:bg-[#007bff]`}
             ></button>
-            <span className="invisible group-hover:visible transition-all duration-100 ease-in-out bg-stone-700 text-white py-1 px-2 absolute top-0 rounded-sm drop-shadow-xl right-[-3.4rem]">
+            <span className="invisible group-hover:visible transition-all duration-100 ease-in-out bg-stone-700 text-white py-1 px-2 absolute top-0 rounded-sm drop-shadow-xl right-[-3.9rem]">
               Home
             </span>
           </Link>
