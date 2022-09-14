@@ -52,7 +52,7 @@ function Contact() {
               type="text"
               name="name"
               id="name"
-              placeHolder="Your Name*"
+              placeholder="Your Name*"
               className="py-3 px-5 bg-[#9d959514] w-full md:w-[26rem] focus:outline-none focus:border-[#008bff] focus:ring-1 focus:ring-[#008bff]
        border-2 border-gray-600 rounded-sm"
             />
@@ -61,7 +61,7 @@ function Contact() {
               type="email"
               name="email"
               id="email"
-              placeHolder="Your Email*"
+              placeholder="Your Email*"
               className="py-3 px-5 bg-[#9d959514] w-full md:w-[26rem] focus:outline-none focus:border-[#008bff] focus:ring-1 focus:ring-[#008bff]
              border-2 border-gray-600 rounded-sm"
               required
@@ -70,7 +70,7 @@ function Contact() {
             <textarea
               name="message"
               id="message"
-              placeHolder="Your Message*"
+              placeholder="Your Message*"
               cols="20"
               rows="10"
               className="py-3 px-5 bg-[#9d959514] w-full md:w-[26rem] focus:outline-none focus:border-[#008bff] focus:ring-1 focus:ring-[#008bff]
