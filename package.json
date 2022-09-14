@@ -9,10 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@react-three/drei": "^9.6.2",
-    "@react-three/fiber": "^8.0.12",
     "emailjs-com": "^3.2.0",
-    "framer-motion": "^7.3.5",
+    "framer-motion": "^7.3.2",
     "next": "12.1.6",
     "preact": "^10.7.1",
     "react": "18.1.0",
@@ -21,8 +19,7 @@
     "react-onclickoutside": "^6.12.1",
     "react-player": "^2.10.1",
     "react-reveal": "^1.2.2",
-    "react-scroll": "^1.8.7",
-    "three": "^0.140.0"
+    "react-scroll": "^1.8.7"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",
