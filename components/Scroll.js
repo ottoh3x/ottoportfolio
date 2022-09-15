@@ -43,7 +43,7 @@ function Scroll() {
             to="hero"
             spy={true}
             smooth={true}
-            offset={-150}
+            offset={0}
             duration={700}
             onClick={closeMenu}
             className="group relative"

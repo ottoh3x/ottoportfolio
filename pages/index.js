@@ -20,7 +20,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Scroll />
+     
 
       
       
@@ -42,6 +42,7 @@ export default function Home() {
           <Contact />
         </section>
         <Footer />
+        <Scroll />
       
     </div>
   );

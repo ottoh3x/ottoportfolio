@@ -30,13 +30,15 @@ function Header() {
     setShow(!show);
   };
   return (
-    <div className="w-full  shadow-2xl  drop-shadow-2xl">
+    <div className="w-full py-0 lg:py-4 shadow-2xl  drop-shadow-2xl">
+      <AnimatePresence>
       <motion.div
         initial={{ y: "-100vh" }}
         animate={{
           y: 0,
           transition: { type: "spring", stiffness: 180, duration: 0.3 },
         }}
+        exit={{y:"-100vh"}}
         className="flex justify-between container  mx-auto  px-4  items-center font-poppins text-xl text-gray-200 "
       >
         <Image src="/Ghost.svg" height={40} width={40} objectFit="contain" />
@@ -148,6 +150,7 @@ function Header() {
           )}
         </div>
       </motion.div>
+      </AnimatePresence>
       <AnimatePresence>
       {show && (<motion.div
       initial={{y:"-100vh"}}
