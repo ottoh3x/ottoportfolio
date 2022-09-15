@@ -21,7 +21,7 @@ function Services() {
         whileInView={{
           scale: 1,
           transition: {
-            duration:0.55,
+            duration:0.3,
             type: "spring",
             stiffness: 170,
             ease: "easeInOut",

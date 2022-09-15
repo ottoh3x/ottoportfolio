@@ -9,9 +9,9 @@ function ProjectsItem({ src, title, url }) {
       whileInView={{
         scale: 1,
         transition: {
-          duration:0.55,
+          duration:0.2,
           type: "spring",
-          stiffness: 170,
+          stiffness: 120,
           ease: "easeInOut",
         },
       }} className="md:max-w-md bg-[#00000069] p-4 rounded-lg w-full hover:translate-y-[-0.2rem] transition-all ease-in-out duration-300 cursor-pointer shadow-2xl border-[1px] border-gray-600">
