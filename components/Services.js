@@ -17,15 +17,14 @@ function Services() {
         What can i do for you?{" "}
       </h1>
       <motion.div
-        initial={{ scale: 0.2 }}
+        initial={{ scale: 0 }}
         whileInView={{
           scale: 1,
           transition: {
-            duration:0.45,
+            duration:0.55,
             type: "spring",
-            stiffness: 270,
-            damping: 25,
-            ease: "easeOut",
+            stiffness: 170,
+            ease: "easeInOut",
           },
         }}
         ref={scrollRef}

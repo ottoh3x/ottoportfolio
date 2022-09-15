@@ -37,7 +37,7 @@ function Contact() {
 
         <div className="flex flex-col w-full  justify-between mx-auto ">
           <div className="p-2 ">
-            <h1 className="text-gray-400 mx-auto text-2xl mt-6 lg:w-7/12">
+            <h1 className="text-gray-400 mx-auto text-2xl mb-4 lg:w-7/12">
               I am available for full time, part time and freelance work.
               Connect with me via email:{" "}
               <span className="text-gray-200">ottoprogrammer@gmail.com</span>.

@@ -166,6 +166,7 @@ function Header() {
             smooth={true}
             offset={-100}
             duration={500}
+            onClick={() => setShow(false)}
           >
             <li className="w-full p-2 ">Home</li>
           </Link>
@@ -176,6 +177,7 @@ function Header() {
             smooth={true}
             offset={-100}
             duration={500}
+            onClick={() => setShow(false)}
           >
             <li className="w-full p-2 ">
               About
@@ -188,6 +190,7 @@ function Header() {
             smooth={true}
             offset={-100}
             duration={500}
+            onClick={() => setShow(false)}
           >
             <li className="w-full p-2 ">
               Services
@@ -200,6 +203,7 @@ function Header() {
             smooth={true}
             offset={-100}
             duration={500}
+            onClick={() => setShow(false)}
           >
             <li className="w-full p-2 ">
               Projects
@@ -212,6 +216,7 @@ function Header() {
             smooth={true}
             offset={-100}
             duration={500}
+            onClick={() => setShow(false)}
           >
             <li className="w-full p-2 ">Contact</li>
           </Link>
