@@ -10,7 +10,7 @@ function Hero() {
   
   return (
     
-    <section className=" border-b-2  border-gray-600 p-4 " id="hero">
+    <section className=" border-b-2  border-gray-600 py-4 " id="hero">
       <Header />
       <div className="container relative h-64 lg:h-[70vh] flex items-center mx-auto justify-between">
         <Flip top>

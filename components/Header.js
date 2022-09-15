@@ -3,7 +3,7 @@ import { useState, useRef, useEffect } from "react";
 import HeaderItem from "./HeaderItem";
 import { Link } from "react-scroll";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 function Header() {
   const menuRef = useRef(null);
@@ -39,7 +39,7 @@ function Header() {
         }}
         className="flex justify-between container  mx-auto  px-4  items-center font-poppins text-xl text-gray-200 "
       >
-        <Image src="/Ghost.svg" height={40} width={120} objectFit="contain" />
+        <Image src="/Ghost.svg" height={40} width={40} objectFit="contain" />
 
         <div className="hidden md:flex items-center gap-4 ">
           <Link
@@ -148,14 +148,17 @@ function Header() {
           )}
         </div>
       </motion.div>
-      <div
-        className={`absolute ${
-          show
-            ? "flex max-w-full z-100 overflow-y-scroll"
-            : "max-w-0 overflow-hidden"
-        } h-auto left-0 top-16 '} bg-[#040404] w-full z-100 lg:hidden transition-all duration-300 ease-in-out shadow-2xl bg-[#0a0909] text-gray-300 border-b-2 border-gray-800`}
+      <AnimatePresence>
+      {show && (<motion.div
+      initial={{y:"-100vh"}}
+      animate={{y:0,transition:{type:"spring",stiffness:280,duration:0.3}}}
+      exit={{y:"100vh"}}
+        className={` bg-transparent h-screen 
+         relative flex max-w-full  overflow-y-scroll
+           
+        left-0 top-16  w-full  lg:hidden shadow-2xl  text-gray-300 `}
       >
-        <ul className="text-gray-300 font-poppins text-xl space-y-4 flex flex-col text-center mx-auto w-full">
+        <ul className="text-gray-300 font-poppins text-xl gap-2 flex flex-col text-center mx-auto w-full">
           <Link
             activeClass="active"
             to="hero"
@@ -164,7 +167,7 @@ function Header() {
             offset={-100}
             duration={500}
           >
-            <li className="w-full p-2 border-b-[1px] border-gray-600">Home</li>
+            <li className="w-full p-2 ">Home</li>
           </Link>
           <Link
             activeClass="active"
@@ -174,8 +177,8 @@ function Header() {
             offset={-100}
             duration={500}
           >
-            <li className="w-full p-2 border-b-[1px] border-gray-600">
-              About me
+            <li className="w-full p-2 ">
+              About
             </li>{" "}
           </Link>
           <Link
@@ -186,7 +189,7 @@ function Header() {
             offset={-100}
             duration={500}
           >
-            <li className="w-full p-2 border-b-[1px] border-gray-600">
+            <li className="w-full p-2 ">
               Services
             </li>
           </Link>
@@ -198,7 +201,7 @@ function Header() {
             offset={-100}
             duration={500}
           >
-            <li className="w-full p-2 border-b-[1px] border-gray-600">
+            <li className="w-full p-2 ">
               Projects
             </li>
           </Link>
@@ -210,10 +213,12 @@ function Header() {
             offset={-100}
             duration={500}
           >
-            <li className="w-full p-2 border-b-2">Hire me</li>
+            <li className="w-full p-2 ">Contact</li>
           </Link>
         </ul>
-      </div>
+      </motion.div>)}
+      </AnimatePresence>
+      
     </div>
   );
 }
