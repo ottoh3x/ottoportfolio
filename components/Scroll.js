@@ -33,8 +33,8 @@ function Scroll() {
       <nav
         className={
           click
-            ? "selected-circle"
-            : "hidden lg:inline-block fixed left-12 top-32"
+            ? "selected-circle z-50"
+            : "hidden lg:inline-block fixed left-12 top-32 z-50"
         }
       >
         <div className="absolute left-50 transform -translate-x-1/2 flex flex-col space-y-6">
@@ -63,9 +63,9 @@ function Scroll() {
             offset={-150}
             duration={700}
             onClick={closeMenu}
-            className="group relative"
+            className="group relative rounded-full cursor-pointer hover:bg-[#007bff] h-7 w-7 border-4 "
           >
-            <button className="cursor-pointer nav-dot h-7 w-7 block rounded-full border-4   hover:bg-[#007bff] "></button>
+            <button className="   "></button>
             <span className="invisible group-hover:visible transition-all duration-100 ease-in-out bg-stone-700 text-white py-1 px-2 absolute top-0 rounded-sm drop-shadow-xl right-[-4.1rem]">
               About
             </span>
@@ -90,7 +90,7 @@ function Scroll() {
             to="projects"
             spy={true}
             smooth={true}
-            offset={-200}
+            offset={-150}
             duration={700}
             onClick={closeMenu}
             className="group relative"
@@ -105,7 +105,7 @@ function Scroll() {
             to="contact"
             spy={true}
             smooth={true}
-            offset={-200}
+            offset={-150}
             duration={700}
             onClick={closeMenu}
             className="group relative"

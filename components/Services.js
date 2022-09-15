@@ -8,14 +8,11 @@ function Services() {
   const scrollRef = useRef(null);
   return (
     <motion.div
-    initial={{ scale: 0 }}
+    initial={{ opacity: 0 }}
     whileInView={{
-      scale: 1,
+      opacity: 1,
       transition: {
-        duration:0.2,
-        type: "spring",
-        stiffness: 110,
-        ease: "easeInOut",
+        duration:0.9,
       },
     }} className=" lg:container mx-auto p-6  my-4 0  rounded-lg shadow-lg">
       <div className="flex flex-col items-center p-4">
@@ -26,7 +23,14 @@ function Services() {
         {" "}
         What can i do for you?{" "}
       </h1>
-      <div
+      <motion.div
+    initial={{ opacity: 0 }}
+    whileInView={{
+      opacity: 1,
+      transition: {
+        duration:1.3,
+      },
+    }}
         ref={scrollRef}
         className="grid md:grid-cols-3 gap-4 lg:w-4/5 items-center mx-auto mt-[2rem] py-12 "
       >
@@ -70,7 +74,7 @@ function Services() {
             size to ensure usability and satisfaction.
           </p>
         </div>
-      </div>
+      </motion.div>
     </motion.div>
   );
 }
