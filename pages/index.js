@@ -18,6 +18,8 @@ export default function Home() {
         <title>OTTO PROGRAMMER</title>
         <meta name="description" content="Otto Programmer Portfolio" />
         <link rel="icon" href="/favicon.ico" />
+        <script src="https://cdn.tailwindcss.com"></script>
+
       </Head>
 
      
