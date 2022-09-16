@@ -7,14 +7,9 @@ import { motion } from "framer-motion";
 function Services() {
   const scrollRef = useRef(null);
   return (
-    <motion.div
-    initial={{ opacity: 0 }}
-    whileInView={{
-      opacity: 1,
-      transition: {
-        duration:0.9,
-      },
-    }} className=" lg:container mx-auto p-6  my-4 0  rounded-lg shadow-lg">
+    <Zoom>
+    <div
+     className=" lg:container mx-auto p-6  my-4 0  rounded-lg shadow-lg">
       <div className="flex flex-col items-center p-4">
         {" "}
         <h1 className="text-5xl font-black text-white">Services</h1>
@@ -28,7 +23,7 @@ function Services() {
     whileInView={{
       opacity: 1,
       transition: {
-        duration:1.3,
+        duration:0.3,
       },
     }}
         ref={scrollRef}
@@ -75,7 +70,8 @@ function Services() {
           </p>
         </div>
       </motion.div>
-    </motion.div>
+    </div>
+    </Zoom>
   );
 }
 
