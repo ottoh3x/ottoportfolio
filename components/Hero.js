@@ -1,6 +1,5 @@
 import React, { useState,useEffect } from "react";
 import Image from "next/image";
-import Flip from "react-reveal/Flip";
 import { SiGithub, SiTwitter, SiInstagram, SiFacebook } from "react-icons/si";
 import Header from "./Header";
 import {motion} from "framer-motion"

@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-import Zoom from "react-reveal/Zoom";
 import { MdOutlineDesignServices } from "react-icons/md";
 import { FiDatabase } from "react-icons/fi";
 import { GoDeviceDesktop } from "react-icons/go";
@@ -7,7 +6,6 @@ import { motion } from "framer-motion";
 function Services() {
   const scrollRef = useRef(null);
   return (
-    <Zoom>
     <div
      className=" lg:container mx-auto p-6  my-4 0  rounded-lg shadow-lg">
       <div className="flex flex-col items-center p-4">
@@ -71,7 +69,6 @@ function Services() {
         </div>
       </motion.div>
     </div>
-    </Zoom>
   );
 }
 
