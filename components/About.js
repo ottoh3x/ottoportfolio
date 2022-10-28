@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import Zoom from "react-reveal/Zoom";
 
 import {
   SiNextdotjs,
@@ -17,7 +16,6 @@ import { motion } from "framer-motion";
 
 function About() {
   return (
-    <Zoom>
       <div className="flex flex-col justify-center relative  mx-auto container h-full p-6  my-6 space-y-6 rounded-lg shadow-lg">
         <div className="flex flex-col items-center p-4">
           {" "}
@@ -52,7 +50,6 @@ function About() {
 
       
   
-    </Zoom>
   );
 }
 

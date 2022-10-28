@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import emailjs from "emailjs-com";
-import Zoom from "react-reveal/Zoom";
 import Image from "next/image";
 
 function Contact() {
@@ -28,7 +27,6 @@ function Contact() {
   };
 
   return (
-    <Zoom>
       <div className="container mx-auto p-2  my-6  rounded-lg shadow-lg">
         <div className="flex flex-col items-center p-4">
           {" "}
@@ -86,7 +84,6 @@ function Contact() {
           </form>
         </div>
       </div>
-    </Zoom>
   );
 }
 

@@ -1,11 +1,9 @@
 import React from "react";
 import ProjectsItem from "./ProjectsItem";
-import Zoom from "react-reveal/Zoom";
 import {motion} from "framer-motion"
 
 function Projects() {
   return (
-    <Zoom>
       <div className="container mx-auto p-6  my-6  rounded-lg shadow-lg">
         <div className="flex flex-col items-center p-4">
           {" "}
@@ -37,7 +35,6 @@ function Projects() {
           />
         </motion.div>
       </div>
-      </Zoom>
         
   
   );
