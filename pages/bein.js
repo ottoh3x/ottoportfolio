@@ -52,15 +52,15 @@ function Bein() {
 
   return <div className="bg-[#111] h-screen mx-auto">
   <h1 className="font-bold p-1 text-white text-center text-3xl">Episode {episode}</h1>
-    <div className="p-3 flex justify-center items-center">
+    <div className="p-1 flex justify-center items-center">
     
 
-    <ReactPlayer width="700" height="500" url={epLink} />
+    <ReactPlayer width="800px" height="512px" url={epLink} controls playing/>
   
 </div>
 
 
-  <div className="text-gray-200 grid grid-cols-5 gap-2 p-4">
+  <div className="text-gray-200 grid grid-cols-5 gap-2 p-4 container mx-auto">
    {episodes.map((ep,index) => (
     <span 
       onClick={() => setEpisode(ep.ep)} 
