@@ -13,13 +13,13 @@ function Bein() {
   },
   {ep:4,link:"https://e15.e-amzn-cdn.net/kmxsscrmpnumwmesrlseynh3ofwgqhnufmlzge3gkuqcckxb46aawn66rg7q/v.mp4"
   },
-  {ep:5,link:"https://c40.e-amzn-cdn.net/kmxsstrmpnumwmesrlsey37amf4qttyx5hv3ryndmlupdcsjiy4xdci7agza/v.mp4"
+  {ep:5,link:"https://c40.e-amzn-cdn.net/kmxsstrmpnumwmesrlsey37amf4qttyx5hv3ryndmlupdcsjiy4xdci7agza/v.mp4"  
   },
   {ep:6,link:"https://e3.e-amzn-cdn.net/kmxsv7jspnumwmesrlseyz7qmvsvoywd55t3et5hdi2bzoicw5b3iuak2umq/v.mp4"
   },
-  {ep:7,link:"https://c5.e-amzn-cdn.net/kmxsswrnpnumwmesrlsey67pp3hi4mlpo2vl5mjppm53hivm4bztyiro3h4a/v.mp4"
+  {ep:7,link:"https://c46.e-amzn-cdn.net/kmxsuhzspnumwmesrlsey272pi7z3giuadsum3gztwdylvqwpu6ccxczzdpq/v.mp4"
   },
-  {ep:8,link:"https://c5.e-amzn-cdn.net/kmxsswrnpnumwmesrlsey67pp3hi4mlpo2vl5mjppm53hivm4bztyiro3h4a/v.mp4"
+  {ep:8,link:"https://e16.e-amzn-cdn.net/kmxstcrrpnumwmesrlseymnbhpb5dyokne5yzrvm5b6fcfcl4oe7e3gnaffq/v.mp4"
   },
   {ep:9,link:"https://c5.e-amzn-cdn.net/kmxsswrnpnumwmesrlsey67pp3hi4mlpo2vl5mjppm53hivm4bztyiro3h4a/v.mp4"
   },
@@ -52,10 +52,10 @@ function Bein() {
 
   return <div className="bg-[#111] h-screen mx-auto">
   <h1 className="font-bold p-1 text-white text-center text-3xl">Episode {episode}</h1>
-    <div className="p-1 flex justify-center items-center">
+    <div className="p-1  flex justify-center items-center">
     
 
-    <ReactPlayer width="800px" height="512px" url={epLink} controls playing/>
+    <ReactPlayer  url={epLink} controls playing/>
   
 </div>
 
