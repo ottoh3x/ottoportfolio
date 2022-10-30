@@ -54,7 +54,9 @@ function Bein() {
   <h1 className="font-bold p-1 text-white text-center text-3xl">Episode {episode}</h1>
     <div className="p-1  flex justify-center items-center">
     
-
+<video>
+<source src="https://c5.e-amzn-cdn.net/kmxstubmpnumwmesrlseyyhupiikpscun3bitfpso2rdq5vnruxfeupveb3q/v.mp4" />
+</video>
     <ReactPlayer width="100%" height="100%" url={epLink} controls playing/>
   
 </div>
