@@ -12,6 +12,7 @@
     "emailjs-com": "^3.2.0",
     "framer-motion": "^7.3.2",
     "next": "12.1.6",
+    "plyr-react": "^5.1.0",
     "preact": "^10.7.1",
     "react": "18.1.0",
     "react-dom": "18.1.0",
