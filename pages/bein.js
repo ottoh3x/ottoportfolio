@@ -53,7 +53,7 @@ function Bein() {
 
   return <div className="bg-[#111]">
   <h1 className="font-bold p-1 text-white text-center text-3xl">Episode {episode}</h1>
-    <div className="p-1  flex justify-center items-center">
+    <div className="p-1  ">
     
     <Plyr source={videoSrc} />
   
