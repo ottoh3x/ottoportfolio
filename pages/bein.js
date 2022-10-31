@@ -56,7 +56,6 @@ function Bein() {
     <div className="p-1  flex justify-center items-center">
     
     <Plyr source={videoSrc} />
-    {/* <ReactPlayer width="100%" height="100%" url={epLink} controls playing/> */}
   
 </div>
 
