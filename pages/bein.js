@@ -19,15 +19,15 @@ function Bein() {
   },
   {ep:12,link:"https://c43.e-amzn-cdn.net/kmxsvljxpnumwmesrlsey2pphcu6kf7ve5yh4yevm4idlul2yepdh5g526da/v.mp4"
   },
-  {ep:13,link:"https://vidhd.fun/embed-j3v4s6qmmzzy.html"
+  {ep:13,link:"https://c32.e-amzn-cdn.net/kmxst5zxpnumwmesrlsey25kp6liwtl2ltkigwqf36d3taile6l5ohjfganq/v.mp4"
   },
-  {ep:14,link:"https://vidhd.fun/embed-qgblv2zmkfqb.html"
+  {ep:14,link:"https://c40.e-amzn-cdn.net/kmxssprxpnumwmesrlsey4h6nptnft7yqbfd2t2wzn4id7vl4dvg73oea7uq/v.mp4"
   },
-  {ep:15,link:"https://vidhd.fun/embed-o4oizgle67ru.html"
+  {ep:15,link:"https://e18.e-amzn-cdn.net/kmxss5jxpnumwmesrlsey3vnm3okxyhc3pdus66tyywjgyfleoj5uhbibmeq/v.mp4"
   },
-  {ep:16,link:"https://vidhd.fun/embed-71l5xyueo9qm.html"
+  {ep:16,link:"https://c34.e-amzn-cdn.net/kmxsv2bvpnumwmesrlseynvimuociov5h4nopa42g4pwjmjruptxqhvxvmva/v.mp4"
 },
-{ep:17,link:"https://vidhd.fun/embed-vi1nzbqc39at.html"
+{ep:17,link:"https://e16.e-amzn-cdn.net/kmxssirvpnumwmesrlsey57qhcp4ey5ajlbksqrih3hqr5klf45ite7xdftq/v.mp4"
 },
 {ep:18,link:"https://e9.e-amzn-cdn.net/kmxss4bvpnumwmesrlseynvamzsrzt6tujtualqvlzc7njvzr2awiuaglifa/v.mp4"
 }
