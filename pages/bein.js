@@ -11,13 +11,13 @@ function Bein() {
  
   {ep:8,link:"https://e16.e-amzn-cdn.net/kmxstcrrpnumwmesrlseymnbhpb5dyokne5yzrvm5b6fdxlhl6nu3bffj6na/v.mp4"
   },
-  {ep:9,link:"https://vidhd.fun/embed-a0317bdran86.html"
+  {ep:9,link:"https://e16.e-amzn-cdn.net/kmxstorrpnumwmesrlseyyfjhiir5ddt47oyb66tpt2mksd4sefsxw6y3jiq/v.mp4"
   },
-  {ep:10,link:"https://vidhd.fun/embed-21wf0oz30wdk.html"
+  {ep:10,link:"https://c43.e-amzn-cdn.net/kmxsuajrpnumwmesrlseym5ip2p3fqy2nmr4alyd3r7mnm2vx7h74cc5bydq/v.mp4"
   },
-  {ep:11,link:"https://vidhd.fun/embed-xr77e7j4790y.html"
+  {ep:11,link:"https://e16.e-amzn-cdn.net/kmxstbrxpnumwmesrlsey6plhyt54njpxgjyixsmmawktdzkfg7rlskqe4aq/v.mp4"
   },
-  {ep:12,link:"https://vidhd.fun/embed-hv1l267q90zu.html"
+  {ep:12,link:"https://c43.e-amzn-cdn.net/kmxsvljxpnumwmesrlsey2pphcu6kf7ve5yh4yevm4idlul2yepdh5g526da/v.mp4"
   },
   {ep:13,link:"https://vidhd.fun/embed-j3v4s6qmmzzy.html"
   },
@@ -29,7 +29,7 @@ function Bein() {
 },
 {ep:17,link:"https://vidhd.fun/embed-vi1nzbqc39at.html"
 },
-{ep:18,link:"https://vidhd.fun/embed-79okb90slxjd.html"
+{ep:18,link:"https://e9.e-amzn-cdn.net/kmxss4bvpnumwmesrlseynvamzsrzt6tujtualqvlzc7njvzr2awiuaglifa/v.mp4"
 }
 
   ]
@@ -61,8 +61,7 @@ function Bein() {
   <h1 className="font-bold p-1 text-white text-center text-3xl">Episode {episode}</h1>
     <div className="p-1  ">
     
-    {/* <Plyr source={videoSrc} /> */}
-    <iframe src={epLink} width="800" height="512" allowFullScreen sandbox ></iframe>
+    <Plyr source={videoSrc} />
   
 </div>
 
