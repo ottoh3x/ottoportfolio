@@ -5,21 +5,14 @@ import "plyr-react/plyr.css"
 
 function Bein() {
 
-  const [episode,setEpisode] = useState(26)
+  const [episode,setEpisode] = useState(29)
   const [epLink,setEpLink] = useState("https://c5.e-amzn-cdn.net/kmxstxjzpnumwmesrl5uy4p3phl5a7qaq5uqrtta27ol2i5kyxdenqd5agqq/v.mp4")
   const episodes = [
  
-  {ep:26,link:"https://c5.e-amzn-cdn.net/kmxstxjzpnumwmesrl5uy4p3phl5a7qaq5uqrtta27ol2i5kyxdenqd5agqq/v.mp4"
+  {ep:29,link:"https://c9.e-amzn-cdn.net/kmxsspnppnumwmesrl7ey57ypkcmwii6mbmbjxblwdfypzbflopgxhsmp4cq/v.mp4"
   },
-  {ep:27,link:"https://e3.e-amzn-cdn.net/kmxsudjzpnumwmesrl5uy2h5gchzkmdzgn6nxjpj3hxhfn7ogmutnnms6oka/v.mp4"
-  },
-  {ep:28,link:"https://e1.e-amzn-cdn.net/kmxssozzpnumwmesrl5uy3x5hb2ox6vnxsgstqflb2i32gsxex7774sgdgia/v.mp4"
-  },
-  {ep:29,link:"https://c5.e-amzn-cdn.net/kmxssyjzpnumwmesrl5uynpvnqmlqioxtg3sn4c2sgrixtxfkqzosigaqljq/v.mp4"
-  },
-  {ep:30,link:"https://c40.e-amzn-cdn.net/kmxsttbypnumwmesrl5uyzh4hzusd5hjmedzmbypeegoqzaf2dvbdw46swiq/v.mp4"
-  }
-  
+  {ep:30,link:"https://e14.e-amzn-cdn.net/kmxstenopnumwmesrl7ey2hjmdafgst46vfz5ds34dogdq7wnzfz274qskaa/v.mp4"
+}
 
   ]
 
