@@ -34,10 +34,10 @@ function Scroll() {
         className={
           click
             ? "selected-circle z-50"
-            : "hidden lg:inline-block fixed left-12 top-32 z-50"
+            : "hidden  fixed left-12 top-32 z-50 md:flex w-full justify-center"
         }
       >
-        <div className="absolute left-50 transform -translate-x-1/2 flex flex-col space-y-6">
+        <div className="fixed flex top-2 py-2 gap-2 px-4 bg-neutral-900 mt-2 rounded-full transform -translate-x-1/2  ">
           <Link
             activeClass="bg-[#007bff] rounded-full "
             to="hero"
@@ -51,7 +51,7 @@ function Scroll() {
             <button
               className={`cursor-pointer  nav-dot h-7 w-7 block rounded-full border-4 hover:bg-[#007bff] active:bg-[#007bff]`}
             ></button>
-            <span className="invisible group-hover:visible transition-all duration-100 ease-in-out bg-stone-700 text-white py-1 px-2 absolute top-0 rounded-sm drop-shadow-xl right-[-3.9rem]">
+            <span className="invisible group-hover:visible transition-all duration-100 ease-in-out bg-stone-800 z-50 text-white py-1 px-2 absolute top-0 rounded-sm drop-shadow-xl right-[-3.9rem]">
               Home
             </span>
           </Link>
@@ -66,7 +66,7 @@ function Scroll() {
             className="group relative rounded-full cursor-pointer hover:bg-[#007bff] h-7 w-7 border-4 "
           >
             <button className="   "></button>
-            <span className="invisible group-hover:visible transition-all duration-100 ease-in-out bg-stone-700 text-white py-1 px-2 absolute top-0 rounded-sm drop-shadow-xl right-[-4.1rem]">
+            <span className="invisible group-hover:visible transition-all duration-100 ease-in-out bg-stone-800 z-50 text-white py-1 px-2 absolute top-0 rounded-sm drop-shadow-xl right-[-4.1rem]">
               About
             </span>
           </Link>
@@ -81,7 +81,7 @@ function Scroll() {
             className="group relative"
           >
             <button className="cursor-pointer nav-dot h-7 w-7  block rounded-full border-4   hover:bg-[#007bff]"></button>
-            <span className="invisible group-hover:visible transition-all duration-100 ease-in-out bg-stone-700 text-white py-1 px-2 absolute top-0 rounded-sm drop-shadow-xl right-[-5.2rem]">
+            <span className="invisible group-hover:visible transition-all duration-100 ease-in-out bg-stone-800 z-50 text-white py-1 px-2 absolute top-0 rounded-sm drop-shadow-xl right-[-5.2rem]">
               Services
             </span>
           </Link>
@@ -96,7 +96,7 @@ function Scroll() {
             className="group relative"
           >
             <button className="cursor-pointer nav-dot h-7 w-7 block rounded-full border-4   hover:bg-[#007bff]"></button>
-            <span className="invisible group-hover:visible transition-all duration-100 ease-in-out bg-stone-700 text-white py-1 px-2 absolute top-0 rounded-sm drop-shadow-xl right-[-5.2rem]">
+            <span className="invisible group-hover:visible transition-all duration-100 ease-in-out bg-stone-800 z-50 text-white py-1 px-2 absolute top-0 rounded-sm drop-shadow-xl right-[-5.2rem]">
               Projects
             </span>
           </Link>
@@ -111,7 +111,7 @@ function Scroll() {
             className="group relative"
           >
             <button className="cursor-pointer nav-dot h-7 w-7  block rounded-full border-4   hover:bg-[#007bff]"></button>
-            <span className="invisible group-hover:visible transition-all duration-100 ease-in-out bg-stone-700 text-white py-1 px-2 absolute top-0 rounded-sm drop-shadow-xl right-[-5.2rem]">
+            <span className="invisible group-hover:visible transition-all duration-100 ease-in-out bg-stone-800 z-50 text-white py-1 px-2 absolute top-0 rounded-sm drop-shadow-xl right-[-5.2rem]">
               Contact
             </span>
           </Link>

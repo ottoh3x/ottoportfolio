@@ -1,6 +1,25 @@
 import React, { useRef } from "react";
 import emailjs from "emailjs-com";
 import Image from "next/image";
+import {motion} from "framer-motion"
+
+
+export const textVariant2 = {
+  hidden: {
+    opacity: 0,
+    y: 20,
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: 'tween',
+      ease: 'easeIn',
+      duration:0.6,
+      delay:0.4
+    },
+  },
+};
 
 function Contact() {
   const form = useRef();
@@ -27,8 +46,18 @@ function Contact() {
   };
 
   return (
-      <div className="container mx-auto p-2  my-6  rounded-lg shadow-lg">
-        <div className="flex flex-col items-center p-4">
+      <motion.div 
+      initial={{ opacity: 0 }}
+      whileInView={{
+        opacity: 1,
+        transition: {
+        duration:0.6,
+        delay:0.25
+    },
+  }} className="container mx-auto p-2  my-6  rounded-lg shadow-lg">
+        <div 
+        
+    className="flex flex-col items-center p-4">
           {" "}
           <h1 className="text-5xl font-black text-white">Contact</h1>
         </div>
@@ -83,7 +112,7 @@ function Contact() {
             </button>
           </form>
         </div>
-      </div>
+      </motion.div>
   );
 }
 

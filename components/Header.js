@@ -5,6 +5,28 @@ import { Link } from "react-scroll";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 
+
+export const navVariants = {
+  hidden: {
+    opacity: 0,
+    y: -50,
+    transition: {
+      type: 'spring',
+      stiffness: 300,
+      damping: 140,
+    },
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: 'spring',
+      stiffness: 80,
+      delay: 0.5,
+    },
+  },
+};
+
 function Header() {
   const menuRef = useRef(null);
   const [listening, setListening] = useState(false);
@@ -30,15 +52,12 @@ function Header() {
     setShow(!show);
   };
   return (
-    <div className="w-full py-0 lg:py-4 shadow-2xl  drop-shadow-2xl">
+    <div className="w-full py-0 lg:py-1 shadow-2xl lg:px-2  drop-shadow-2xl">
       <AnimatePresence>
       <motion.div
-        initial={{ y: "-100vh" }}
-        animate={{
-          y: 0,
-          transition: { type: "spring", stiffness: 180, duration: 0.3 },
-        }}
-        exit={{y:"-100vh"}}
+        variants={navVariants}
+        initial="hidden"
+        whileInView="show"
         className="flex justify-between container  mx-auto  px-4  items-center font-poppins text-xl text-gray-200 "
       >
         <Image src="/Ghost.svg" height={40} width={40} objectFit="contain" />

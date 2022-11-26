@@ -18,7 +18,8 @@ export default function Home() {
         <title>OTTO PROGRAMMER</title>
         <meta name="description" content="Otto Programmer Portfolio" />
         <link rel="icon" href="/favicon.ico" />
-        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="preconnect" href="https://stijndv.com" />
+      <link rel="stylesheet" href="https://stijndv.com/fonts/Eudoxus-Sans.css" />
 
       </Head>
 

@@ -14,6 +14,7 @@
   }
   html {
     font-family: 'Roboto', sans-serif;
+    background:#ffffff05;
   }
 
  
@@ -23,6 +24,14 @@ C {
 }
 
 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Eudoxus Sans", sans-serif;
+  scroll-behavior: smooth;
+}
 
 section {
     border-bottom: solid 1px rgba(255, 255, 255, 0.137)
