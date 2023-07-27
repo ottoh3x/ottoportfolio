@@ -52,7 +52,7 @@ function Header() {
     setShow(!show);
   };
   return (
-    <div className="w-full py-0 lg:py-1 shadow-2xl lg:px-2  drop-shadow-2xl">
+    <div className="w-full py-0  shadow-2xl bg-neutral-900/70 z-50 relative lg:p-3  drop-shadow-2xl border-b-2 border-neutral-900">
       <AnimatePresence>
       <motion.div
         variants={navVariants}

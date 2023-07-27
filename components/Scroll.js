@@ -37,14 +37,14 @@ function Scroll() {
             : "hidden  fixed left-12 top-32 z-50 md:flex w-full justify-center"
         }
       >
-        <div className="fixed flex top-2 py-2 gap-2 px-4 bg-neutral-900 mt-2 rounded-full transform -translate-x-1/2  ">
+        <div className="fixed flex flex-col left-12 top-32 py-5 gap-2 px-4 bg-neutral-900 mt-2 rounded-full transform -translate-x-1/2  ">
           <Link
             activeClass="bg-[#007bff] rounded-full "
             to="hero"
             spy={true}
             smooth={true}
             offset={0}
-            duration={700}
+            duration={400}
             onClick={closeMenu}
             className="group relative"
           >
@@ -60,8 +60,8 @@ function Scroll() {
             to="about"
             spy={true}
             smooth={true}
-            offset={-150}
-            duration={700}
+            offset={0}
+            duration={400}
             onClick={closeMenu}
             className="group relative rounded-full cursor-pointer hover:bg-[#007bff] h-7 w-7 border-4 "
           >
@@ -75,13 +75,13 @@ function Scroll() {
             to="services"
             spy={true}
             smooth={true}
-            offset={-150}
+            offset={20}
             duration={500}
             onClick={closeMenu}
             className="group relative"
           >
             <button className="cursor-pointer nav-dot h-7 w-7  block rounded-full border-4   hover:bg-[#007bff]"></button>
-            <span className="invisible group-hover:visible transition-all duration-100 ease-in-out bg-stone-800 z-50 text-white py-1 px-2 absolute top-0 rounded-sm drop-shadow-xl right-[-5.2rem]">
+            <span className="invisible group-hover:visible transition-all duration-100 ease-in-out bg-stone--400 z-50 text-white py-1 px-2 absolute top-0 rounded-sm drop-shadow-xl right-[-5.2rem]">
               Services
             </span>
           </Link>
@@ -90,8 +90,8 @@ function Scroll() {
             to="projects"
             spy={true}
             smooth={true}
-            offset={-150}
-            duration={700}
+            offset={20}
+            duration={400}
             onClick={closeMenu}
             className="group relative"
           >
@@ -105,8 +105,8 @@ function Scroll() {
             to="contact"
             spy={true}
             smooth={true}
-            offset={-150}
-            duration={700}
+            offset={20}
+            duration={400}
             onClick={closeMenu}
             className="group relative"
           >
@@ -126,7 +126,7 @@ function Scroll() {
               x: 0,
               transition: { type: "spring", stiffness: 170, duration: 0.3 },
             }}
-            exit={{ x: "100vh", transition: { duration: 0.9 } }}
+            exit={{ x: "100vh", transition: { duration: 0.4 } }}
             className="fixed right-6 bottom-4 p-3 z-100 animate-pulse cursor-pointer "
             onClick={scrollUp}
           >

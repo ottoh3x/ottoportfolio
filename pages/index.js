@@ -28,20 +28,20 @@ export default function Home() {
       
       
       <Hero />
-        <section className=" p-2 bg-[#ffffff05] about">
+        <section className=" p-2 bg-[#ffffff05] about h-screen">
           <About />
         </section>
       
-        <section className=" p-2 services " id="services">
+        <section className=" p-2 services h-screen " id="services">
           <Services />
 
         </section>
         
-        <section className=" p-2 projects bg-[#ffffff05]" id="projects">
+        <section className=" p-2 projects bg-[#ffffff05] h-screen" id="projects">
           <Projects />
         </section>
         
-        <section className="contact p-2">
+        <section className="contact p-2 h-screen">
           <Contact />
         </section>
         <Footer />
