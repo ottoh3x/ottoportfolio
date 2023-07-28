@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import {motion} from "framer-motion"
 
-function ProjectsItem({ src, title, url }) {
+function ProjectsItem({ src, title, url,desc }) {
   return (
     
       <div className="md:max-w-md bg-[#00000069] p-4 rounded-lg w-full hover:translate-y-[-0.2rem] transition-all ease-in-out duration-300 cursor-pointer shadow-2xl border-[1px] border-neutral-800">
@@ -11,7 +11,7 @@ function ProjectsItem({ src, title, url }) {
           {title}
         </h1>
         <p className="text-gray-400 p-2 text-center">
-          An Ad Free Anime Streaming web app to give you a better experience.
+          {desc}
         </p>
         <a href={url} target="_blank" rel="noopener noreferrer">
           <button

@@ -49,7 +49,7 @@ function About() {
           <motion.img whileHover={{rotate:50}} className="object-contain mx-auto max-w-max w-60  rounded-full" src="/pfp.png" />
         <motion.p initial={{opacity:0}} whileInView={{opacity:1,transition:{duration:0.6,delay:0.25}}} className="text-gray-400 text-xl text-center font-custom2 font-extralight leading-relaxed
  md:w-1/2 mx-auto">
-        Hi i'm OTTO Programmer.I'm a Freelance Full Stack Devoloper Based in Morocco,and I'm very passionate and dedicated to my work.With 3 years experience as a professional Full Stack Devoloper. I have acquired the skills necessary to build great and premium websites.
+        Hi i'm OTTO Programmer.I'm a Freelance Full Stack Devoloper, and I'm very passionate and dedicated to my work.With 3 years experience as a professional Full Stack Devoloper. I have acquired the skills necessary to build great and premium websites.
         </motion.p></div>
         <motion.div 
          variants={textVariant2}

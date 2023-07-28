@@ -64,9 +64,23 @@ function Projects() {
       whileInView="show"
       >
         <ProjectsItem
+            title="Portfolio"
+            src="/lucy.png"
+            url="https://ottocomponents.vercel.app"
+            desc={`A Portfolio Template.`}
+          />
+
+      </motion.div>
+      <motion.div
+      variants={pt('left')}
+      initial="hidden"
+      whileInView="show"
+      >
+        <ProjectsItem
             title="OTMovies"
             src="/otmovies.png"
             url="https://otmovies.vercel.app"
+            desc={`Movie app based on TMDB api.`}
           />
 
       </motion.div>
@@ -80,6 +94,7 @@ function Projects() {
             title="Anime Faze"
             src="/anifaze.png"
             url="https://anifaze.herokuapp.com"
+            desc={`An Ad Free Anime Streaming web app to give you a better experience.`}
           />
 
       </motion.div>
@@ -95,6 +110,7 @@ function Projects() {
             title="Animex Stream"
             src="/animex.png"
             url="https://www.animexstream.xyz"
+            desc={`An Ad Free Anime Streaming web app to give you a better experience..`}
           />
 
       </motion.div>

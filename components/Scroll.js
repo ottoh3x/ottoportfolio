@@ -90,7 +90,7 @@ function Scroll() {
             to="projects"
             spy={true}
             smooth={true}
-            offset={20}
+            offset={30}
             duration={400}
             onClick={closeMenu}
             className="group relative"
@@ -105,7 +105,7 @@ function Scroll() {
             to="contact"
             spy={true}
             smooth={true}
-            offset={20}
+            offset={80}
             duration={400}
             onClick={closeMenu}
             className="group relative"

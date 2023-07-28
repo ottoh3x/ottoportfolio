@@ -68,7 +68,7 @@ function Header() {
             to="hero"
             spy={true}
             smooth={true}
-            offset={-100}
+            offset={0}
             duration={500}
           >
             <HeaderItem title="Home" />
@@ -78,7 +78,7 @@ function Header() {
             to="about"
             spy={true}
             smooth={true}
-            offset={-100}
+            offset={0}
             duration={500}
           >
             <HeaderItem title="About" />
@@ -88,7 +88,7 @@ function Header() {
             to="services"
             spy={true}
             smooth={true}
-            offset={-100}
+            offset={20}
             duration={500}
           >
             <HeaderItem title="Services" />
@@ -98,7 +98,7 @@ function Header() {
             to="projects"
             spy={true}
             smooth={true}
-            offset={-100}
+            offset={30}
             duration={500}
           >
             <HeaderItem title="Projects" />
@@ -109,7 +109,7 @@ function Header() {
             to="contact"
             spy={true}
             smooth={true}
-            offset={-100}
+            offset={80}
             duration={500}
           >
             <motion.div

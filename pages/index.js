@@ -32,16 +32,16 @@ export default function Home() {
           <About />
         </section>
       
-        <section className=" p-2 services h-screen " id="services">
+        <section className=" p-2 services h-full " id="services">
           <Services />
 
         </section>
         
-        <section className=" p-2 projects bg-[#ffffff05] h-screen" id="projects">
+        <section className=" p-2 projects bg-[#ffffff05] h-full" id="projects">
           <Projects />
         </section>
         
-        <section className="contact p-2 h-screen">
+        <section className="contact p-2 h-screen flex items-center">
           <Contact />
         </section>
         <Footer />
