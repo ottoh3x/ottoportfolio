@@ -12,7 +12,7 @@ function Hero() {
     
     <section className=" border-b-2 css-selector   border-gray-600 pb-4 " id="hero">
       <Header />
-      <div className="container relative mt-[-5rem] h-screen flex items-center mx-auto justify-between">
+      <div className="container relative mt-0 lg:mt-[-5rem] h-screen flex items-center mx-auto justify-between">
         
         <div className="flex absolute bottom-0 w-full place-content-center space-x-4">
           <div className="cursor-pointer text-gray-200 hover:brightness-150 hover:scale-[1.20] transition-all ease">
