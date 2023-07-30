@@ -37,7 +37,7 @@ function Scroll() {
             : "hidden  fixed left-12 top-32 z-50 md:flex w-full justify-center"
         }
       >
-        <div className="fixed flex flex-col left-12 top-32 py-5 gap-2 px-4 bg-neutral-900 mt-2 rounded-full transform -translate-x-1/2  ">
+        <div className="fixed flex flex-col left-12 top-32 py-3.5 gap-2 px-2 bg-neutral-900 mt-2 rounded-full transform -translate-x-1/2  ">
           <Link
             activeClass="bg-[#007bff] rounded-full "
             to="hero"
@@ -46,14 +46,13 @@ function Scroll() {
             offset={0}
             duration={400}
             onClick={closeMenu}
-            className="group relative"
+            className="group relative tool"
+            aria-label="Home"
           >
             <button
               className={`cursor-pointer  nav-dot h-7 w-7 block rounded-full border-4 hover:bg-[#007bff] active:bg-[#007bff]`}
             ></button>
-            <span className="invisible group-hover:visible transition-all duration-100 ease-in-out bg-stone-800 z-50 text-white py-1 px-2 absolute top-0 rounded-sm drop-shadow-xl right-[-3.9rem]">
-              Home
-            </span>
+            
           </Link>
           <Link
             activeClass="bg-[#007bff] rounded-full "
@@ -63,12 +62,11 @@ function Scroll() {
             offset={0}
             duration={400}
             onClick={closeMenu}
-            className="group relative rounded-full cursor-pointer hover:bg-[#007bff] h-7 w-7 border-4 "
+            className="group relative rounded-full cursor-pointer hover:bg-[#007bff] h-7 w-7 border-4 tool"
+            aria-label="About"
           >
             <button className="   "></button>
-            <span className="invisible group-hover:visible transition-all duration-100 ease-in-out bg-stone-800 z-50 text-white py-1 px-2 absolute top-0 rounded-sm drop-shadow-xl right-[-4.1rem]">
-              About
-            </span>
+            
           </Link>
           <Link
             activeClass="bg-[#007bff] rounded-full "
@@ -78,12 +76,11 @@ function Scroll() {
             offset={20}
             duration={500}
             onClick={closeMenu}
-            className="group relative"
+            className="group relative tool"
+            aria-label="Services"
           >
             <button className="cursor-pointer nav-dot h-7 w-7  block rounded-full border-4   hover:bg-[#007bff]"></button>
-            <span className="invisible group-hover:visible transition-all duration-100 ease-in-out bg-stone--400 z-50 text-white py-1 px-2 absolute top-0 rounded-sm drop-shadow-xl right-[-5.2rem]">
-              Services
-            </span>
+            
           </Link>
           <Link
             activeClass="bg-[#007bff] rounded-full "
@@ -93,12 +90,11 @@ function Scroll() {
             offset={30}
             duration={400}
             onClick={closeMenu}
-            className="group relative"
+            className="group relative tool"
+            aria-label="Projects"
           >
             <button className="cursor-pointer nav-dot h-7 w-7 block rounded-full border-4   hover:bg-[#007bff]"></button>
-            <span className="invisible group-hover:visible transition-all duration-100 ease-in-out bg-stone-800 z-50 text-white py-1 px-2 absolute top-0 rounded-sm drop-shadow-xl right-[-5.2rem]">
-              Projects
-            </span>
+           
           </Link>
           <Link
             activeClass="bg-[#007bff] rounded-full "
@@ -108,12 +104,11 @@ function Scroll() {
             offset={80}
             duration={400}
             onClick={closeMenu}
-            className="group relative"
+            className="group relative tool"
+            aria-label="Contact"
           >
             <button className="cursor-pointer nav-dot h-7 w-7  block rounded-full border-4   hover:bg-[#007bff]"></button>
-            <span className="invisible group-hover:visible transition-all duration-100 ease-in-out bg-stone-800 z-50 text-white py-1 px-2 absolute top-0 rounded-sm drop-shadow-xl right-[-5.2rem]">
-              Contact
-            </span>
+            
           </Link>
         </div>
       </nav>
@@ -127,7 +122,7 @@ function Scroll() {
               transition: { type: "spring", stiffness: 170, duration: 0.3 },
             }}
             exit={{ x: "100vh", transition: { duration: 0.4 } }}
-            className="fixed right-6 bottom-4 p-3 z-100 animate-pulse cursor-pointer "
+            className="fixed right-6 bottom-14 p-3 z-100 animate-pulse cursor-pointer "
             onClick={scrollUp}
           >
             <svg

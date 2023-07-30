@@ -28,7 +28,7 @@ export default function Home() {
       
       
       <Hero />
-        <section className=" p-2 bg-[#ffffff05] about h-screen">
+        <section className=" p-2 bg-[#ffffff05] about h-full">
           <About />
         </section>
       
@@ -41,7 +41,7 @@ export default function Home() {
           <Projects />
         </section>
         
-        <section className="contact p-2 h-screen flex items-center">
+        <section className="contact px-2 py-14 flex items-center">
           <Contact />
         </section>
         <Footer />

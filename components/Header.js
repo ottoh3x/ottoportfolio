@@ -22,7 +22,7 @@ export const navVariants = {
     transition: {
       type: 'spring',
       stiffness: 80,
-      delay: 0.5,
+      delay: 0.1,
     },
   },
 };
@@ -52,13 +52,13 @@ function Header() {
     setShow(!show);
   };
   return (
-    <div className="w-full py-0  shadow-2xl bg-neutral-900/70 z-50 relative lg:p-3  drop-shadow-2xl border-b-2 border-neutral-900">
+    <div className="w-full p-2 shadow-2xl bg-neutral-900/70 z-50 relative lg:p-3  drop-shadow-2xl border-b-2 border-neutral-900">
       <AnimatePresence>
       <motion.div
         variants={navVariants}
         initial="hidden"
         whileInView="show"
-        className="flex justify-between container  mx-auto  px-4  items-center font-poppins text-xl text-gray-200 "
+        className="flex justify-between container  mx-auto  px-4  items-center  text-xl text-gray-200 "
       >
         <Image src="/Ghost.svg" height={40} width={40} objectFit="contain" />
 
@@ -180,7 +180,7 @@ function Header() {
            
         left-0 top-16  w-full  lg:hidden shadow-2xl  text-gray-300 `}
       >
-        <ul className="text-gray-300 font-poppins text-xl gap-2 flex flex-col text-center mx-auto w-full">
+        <ul className="text-gray-300 font-costum2 text-xl gap-2 flex flex-col text-center mx-auto w-full">
           <Link
             activeClass="active"
             to="hero"

@@ -52,7 +52,7 @@ function Projects() {
             Projects
           </h1>
         </motion.div>
-        <h1 className="text-gray-400 text-center text-3xl font-normal p-4 animate-pulse mb-8">
+        <h1 className="text-gray-400 text-center text-3xl font-costum2 p-4 animate-pulse mb-8">
           My latest Work.
         </h1>
 
@@ -109,7 +109,7 @@ function Projects() {
          <ProjectsItem
             title="Animex Stream"
             src="/animex.png"
-            url="https://www.animexstream.xyz"
+            url="https://www.animex.live"
             desc={`An Ad Free Anime Streaming web app to give you a better experience..`}
           />
 

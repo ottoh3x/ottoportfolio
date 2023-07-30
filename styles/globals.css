@@ -3,17 +3,19 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
-@font-face {
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* @font-face {
     font-family: 'Bebas Neue';
     src: url("/BebasNeue-Regular.ttf")
-  }
+  } */
   
   @font-face {
     font-family: 'Montserrat';
     src: url("/Montserrat-VariableFont_wght.ttf")
   }
   html {
-    font-family: 'Roboto', sans-serif;
+    
     background:#ffffff05;
   }
 
@@ -29,7 +31,6 @@ C {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Eudoxus Sans", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -97,4 +98,36 @@ section {
   0%{background-position:0% 88%}
   50%{background-position:100% 13%}
   100%{background-position:0% 88%}
+}
+
+
+.tool::after {
+  line-height: 1.25em;
+  position: absolute;
+  content: attr(aria-label);
+  bottom: 100%;
+  color:white;
+  left: 50%;
+  z-index: 999999;
+  margin-bottom: 0.5em;
+  white-space: nowrap;
+  background: #2b2929;
+  transform: translate(-50%, 10px) scale(0.8);
+  transform-origin: 50% 100%;
+  opacity: 0;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: transform 0.2s ease 0.1s, opacity 0.2s ease 0.1s;
+  pointer-events: none;
+  font-size: 0.75em;
+}
+
+.tool:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
+
+.navitem {
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
 }
