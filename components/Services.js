@@ -24,7 +24,7 @@ function Services() {
   const scrollRef = useRef(null);
   return (
     <div
-     className=" lg:container mx-auto p-6  my-4 0  rounded-lg shadow-lg mt-20">
+     className=" w-fit mx-auto p-6  my-4 0  rounded-lg shadow-lg mt-20">
       <motion.div 
         variants={textVariant2}
         initial="hidden"
@@ -50,7 +50,7 @@ function Services() {
         ref={scrollRef}
         className="grid md:grid-cols-3 gap-4 lg:w-4/5 items-center mx-auto mt-[2rem] py-12 "
       >
-        <div className="bg-gradient-to-r from-cyan-500 to-blue-500 lg:bg-none lg:bg-[#09090ebf] h-full drop-shadow-2xl cursor-pointer px-3 py-6 rounded-lg hover:bg-gradient-to-r hover:from-cyan-500 text-white lg:text-gray-400 hover:to-blue-500 transition-all ease-in-out	hover:text-white duration-700	hover:-translate-y-1  ">
+        <div className=" lg:bg-none lg:bg-[#09090ebf] h-full drop-shadow-2xl cursor-pointer px-3 py-6 rounded-lg hover:bg-gradient-to-r  text-white lg:text-gray-400 hover:bg-neutral-900 transition-all ease-in-out	hover:text-white duration-700	hover:-translate-y-1  ">
           <GoDeviceDesktop size={42} className="w-full text-[#007bff]" />
           <h1 className="text-gray-100 p-2 font-bold text-3xl w-full mx-auto text-center">
             Web Development
@@ -61,7 +61,7 @@ function Services() {
             track of time while doing our jobs.
           </p>
         </div>
-        <div className="bg-gradient-to-r from-cyan-500 to-blue-500 lg:bg-none lg:bg-[#09090ebf] h-full drop-shadow-2xl cursor-pointer px-3 py-6 rounded-lg hover:bg-gradient-to-r hover:from-cyan-500 text-white lg:text-gray-400 hover:to-blue-500 transition-all ease-in-out	hover:text-white duration-700	hover:-translate-y-1 ">
+        <div className=" lg:bg-none lg:bg-[#09090ebf] h-full drop-shadow-2xl cursor-pointer px-3 py-6 rounded-lg hover:bg-gradient-to-r  text-white lg:text-gray-400 hover:bg-neutral-900 transition-all ease-in-out	hover:text-white duration-700	hover:-translate-y-1 ">
           <div>
             <FiDatabase size={42} className="w-full text-[#007bff]" />
             <h1 className="text-gray-100 p-2 font-bold text-3xl w-full mx-auto text-center ">
@@ -74,7 +74,7 @@ function Services() {
             computer, let us worry about that for you.
           </p>
         </div>
-        <div className="bg-gradient-to-r from-cyan-500 to-blue-500 lg:bg-none lg:bg-[#09090ebf] h-full drop-shadow-2xl cursor-pointer px-3 py-6 rounded-lg hover:bg-gradient-to-r hover:from-cyan-500 text-white lg:text-gray-400 hover:to-blue-500 transition-all ease-in-out	hover:text-white duration-700	hover:-translate-y-1 ">
+        <div className=" lg:bg-none lg:bg-[#09090ebf] h-full drop-shadow-2xl cursor-pointer px-3 py-6 rounded-lg hover:bg-gradient-to-r  text-white lg:text-gray-400 hover:bg-neutral-900 transition-all ease-in-out	hover:text-white duration-700	hover:-translate-y-1 ">
           <div>
             <MdOutlineDesignServices
               size={42}

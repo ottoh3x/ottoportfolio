@@ -74,7 +74,7 @@ function Header() {
             // duration={500}
           >
             {/* <HeaderItem title="Home" /> */}
-            <span className="text-neutral-400 hover:text-white cursor-pointer">Home</span>
+            <span className="text-neutral-400  hover:text-white cursor-pointer">Home</span>
           </Link>
           <Link
             // activeClass="active"
@@ -86,7 +86,7 @@ function Header() {
             // duration={500}
           >
             {/* <HeaderItem title="Home" /> */}
-            <span className="text-neutral-400 hover:text-white cursor-pointer">About</span>
+            <span className="text-neutral-400  hover:text-white cursor-pointer">About</span>
           </Link>
           <Link
             // activeClass="active"
@@ -98,7 +98,7 @@ function Header() {
             // duration={500}
           >
             {/* <HeaderItem title="Home" /> */}
-            <span className="text-neutral-400 hover:text-white cursor-pointer">Services</span>
+            <span className="text-neutral-400  hover:text-white cursor-pointer">Services</span>
           </Link>
           <Link
             // activeClass="active"
@@ -110,7 +110,7 @@ function Header() {
             // duration={500}
           >
             {/* <HeaderItem title="Home" /> */}
-            <span className="text-neutral-400 hover:text-white cursor-pointer">Projects</span>
+            <span className="text-neutral-400  hover:text-white cursor-pointer">Projects</span>
           </Link>
           <Link
             // activeClass="active"
@@ -122,7 +122,7 @@ function Header() {
             // duration={500}
           >
             {/* <HeaderItem title="Home" /> */}
-            <span className="text-neutral-400 hover:text-white cursor-pointer">Contact</span>
+            <span className="text-neutral-400  hover:text-white cursor-pointer">Contact</span>
           </Link>
           
 
