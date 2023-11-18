@@ -13,7 +13,7 @@ export default function Home() {
 
  
   return (
-    <div className="mx-40 portfolio leading-normal relative tracking-normal text-indigo-400 bg-cover bg-fixed border border-neutral-800 ">
+    <div className="portfolio leading-normal relative tracking-normal text-indigo-400 bg-cover bg-fixed border border-neutral-800 ">
       <Head>
         <title>OTTO PROGRAMMER</title>
         <meta name="description" content="Otto Programmer Portfolio" />
@@ -43,7 +43,7 @@ export default function Home() {
         <section className="contact px-2 py-14 flex items-center">
           <Contact />
         </section> */}
-        <Footer />
+        {/* <Footer /> */}
         {/* <Scroll /> */}
       
     </div>

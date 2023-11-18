@@ -20,7 +20,7 @@ const defaultOptions = {
   
   return (
     
-    <section className=" border-b-2 css-selector bg-neutral-900 h-screen border-gray-600 pb-4 pt-16" id="hero">
+    <section className=" border-b-2 css-selector   border-gray-600 pb-4 pt-16" id="hero">
       {/* <Header /> */}
       <div className="container relative mt-0  h-screen flex items-center mx-auto justify-between">
       

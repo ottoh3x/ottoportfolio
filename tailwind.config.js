@@ -8,12 +8,12 @@ module.exports = {
       spacing: {
         98: "33rem",
       },
-      fontFamily: {
-        custom1: ["Bebas Neue", "sans-serif"],
-        custom2: ["Montserrat", "sans-serif"],
+      // fontFamily: {
+      //   custom1: ["Bebas Neue", "sans-serif"],
+      //   custom2: ["Montserrat", "sans-serif"],
         
         
-      },
+      // },
       zIndex : {
         100 : '99999'
       }

@@ -53,7 +53,7 @@ function Header() {
     setShow(!show);
   };
   return (
-    <div className="w-2/3 rounded-full mx-auto fixed mt-5 p-2 shadow-2xl bg-black/50 z-50 inset-0 max-h-fit   drop-shadow-2xl ">
+    <div className="md:w-2/3 rounded-full mx-auto fixed mt-5 p-2 shadow-2xl bg-neutral-900 z-50 inset-0 max-h-fit   drop-shadow-2xl ">
       <AnimatePresence>
       <motion.div
         variants={navVariants}
@@ -74,7 +74,7 @@ function Header() {
             // duration={500}
           >
             {/* <HeaderItem title="Home" /> */}
-            <span className="hover:text-neutral-300 cursor-pointer">Home</span>
+            <span className="text-neutral-400 hover:text-white cursor-pointer">Home</span>
           </Link>
           <Link
             // activeClass="active"
@@ -86,7 +86,7 @@ function Header() {
             // duration={500}
           >
             {/* <HeaderItem title="Home" /> */}
-            <span className="hover:text-neutral-300 cursor-pointer">About</span>
+            <span className="text-neutral-400 hover:text-white cursor-pointer">About</span>
           </Link>
           <Link
             // activeClass="active"
@@ -98,7 +98,7 @@ function Header() {
             // duration={500}
           >
             {/* <HeaderItem title="Home" /> */}
-            <span className="hover:text-neutral-300 cursor-pointer">Services</span>
+            <span className="text-neutral-400 hover:text-white cursor-pointer">Services</span>
           </Link>
           <Link
             // activeClass="active"
@@ -110,7 +110,7 @@ function Header() {
             // duration={500}
           >
             {/* <HeaderItem title="Home" /> */}
-            <span className="hover:text-neutral-300 cursor-pointer">Projects</span>
+            <span className="text-neutral-400 hover:text-white cursor-pointer">Projects</span>
           </Link>
           <Link
             // activeClass="active"
@@ -122,7 +122,7 @@ function Header() {
             // duration={500}
           >
             {/* <HeaderItem title="Home" /> */}
-            <span className="hover:text-neutral-300 cursor-pointer">Contact</span>
+            <span className="text-neutral-400 hover:text-white cursor-pointer">Contact</span>
           </Link>
           
 
@@ -170,9 +170,9 @@ function Header() {
       </AnimatePresence>
       <AnimatePresence>
       {show && (<motion.div
-      initial={{y:"-100vh"}}
-      animate={{y:0,transition:{type:"spring",stiffness:280,duration:0.3}}}
-      exit={{y:"100vh"}}
+      // initial={{y:"-100vh"}}
+      // animate={{y:0,transition:{type:"spring",stiffness:280,duration:0.3}}}
+      // exit={{y:"100vh"}}
         className={` bg-transparent h-screen 
          relative flex max-w-full  overflow-y-scroll
            
@@ -181,6 +181,7 @@ function Header() {
         <ul className="text-gray-300 font-costum2 text-xl gap-2 flex flex-col text-center mx-auto w-full">
           <Link
             activeClass="active"
+            href={"/about"}
             to="hero"
             spy={true}
             smooth={true}
@@ -190,56 +191,7 @@ function Header() {
           >
             <li className="w-full p-2 ">Home</li>
           </Link>
-          <Link
-            activeClass="active"
-            to="about"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={500}
-            onClick={() => setShow(false)}
-          >
-            <li className="w-full p-2 ">
-              About
-            </li>{" "}
-          </Link>
-          <Link
-            activeClass="active"
-            to="services"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={500}
-            onClick={() => setShow(false)}
-          >
-            <li className="w-full p-2 ">
-              Services
-            </li>
-          </Link>
-          <Link
-            activeClass="active"
-            to="projects"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={500}
-            onClick={() => setShow(false)}
-          >
-            <li className="w-full p-2 ">
-              Projects
-            </li>
-          </Link>
-          <Link
-            activeClass="active"
-            to="contact"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={500}
-            onClick={() => setShow(false)}
-          >
-            <li className="w-full p-2 ">Contact</li>
-          </Link>
+          
         </ul>
       </motion.div>)}
       </AnimatePresence>
