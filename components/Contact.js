@@ -54,7 +54,7 @@ function Contact() {
         duration:0.6,
         delay:0.25
     },
-  }} className="container mx-auto p-2  my-6  rounded-lg shadow-lg">
+  }} className="container mx-auto p-2  my-6  rounded-lg shadow-lg mt-20">
         <div 
         
     className="flex flex-col items-center p-4">

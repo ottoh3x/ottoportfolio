@@ -1,22 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-/* @font-face {
-    font-family: 'Bebas Neue';
-    src: url("/BebasNeue-Regular.ttf")
-  } */
-  
-  @font-face {
-    font-family: 'Montserrat';
-    src: url("/Montserrat-VariableFont_wght.ttf")
-  }
+
+
   html {
     
-    background:#ffffff05;
+    background:hsl(0, 0%, 7%);
   }
 
  
@@ -59,30 +49,30 @@ section {
   fill: #050505;
 }
 
-.portfolio {
+/* .portfolio {
   background: linear-gradient(90deg, rgba(9,12,38,1) 0%, rgb(18 18 18) 35%, rgb(0 0 0) 62%, rgb(9 9 18) 100%);
   font-family: 'Poppins', sans-serif;
 
   
 
-}
+} */
 
-#hero{
+/* #hero{
   background: linear-gradient(rgb(0 0 0 / 83%),rgb(0 0 0)) ,url(https://wallpaperaccess.com/full/1111946.jpg);
   background-size:cover;
   background-position:center center;
-}
+} */
 
 
 
-.css-selector {
+/* .css-selector {
   background: linear-gradient(8deg, #100446df, #000000);
   background-size: 400% 400%;
 
   -webkit-animation: AnimationName 21s ease infinite;
   -moz-animation: AnimationName 21s ease infinite;
   animation: AnimationName 21s ease infinite;
-}
+} */
 
 @-webkit-keyframes AnimationName {
   0%{background-position:0% 88%}

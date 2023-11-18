@@ -1,9 +1,10 @@
 import React from "react";
 import { useState, useRef, useEffect } from "react";
 import HeaderItem from "./HeaderItem";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
+import Link from "next/link";
 
 
 export const navVariants = {
@@ -22,7 +23,7 @@ export const navVariants = {
     transition: {
       type: 'spring',
       stiffness: 80,
-      delay: 0.1,
+     
     },
   },
 };
@@ -52,7 +53,7 @@ function Header() {
     setShow(!show);
   };
   return (
-    <div className="w-full p-2 shadow-2xl bg-neutral-900/70 z-50 relative lg:p-3  drop-shadow-2xl border-b-2 border-neutral-900">
+    <div className="w-2/3 rounded-full mx-auto fixed mt-5 p-2 shadow-2xl bg-black/50 z-50 inset-0 max-h-fit   drop-shadow-2xl ">
       <AnimatePresence>
       <motion.div
         variants={navVariants}
@@ -64,71 +65,68 @@ function Header() {
 
         <div className="hidden md:flex items-center gap-4 ">
           <Link
-            activeClass="active"
-            to="hero"
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={500}
+            // activeClass="active"
+            href="/"
+            // to="hero"
+            // spy={true}
+            // smooth={true}
+            // offset={0}
+            // duration={500}
           >
-            <HeaderItem title="Home" />
+            {/* <HeaderItem title="Home" /> */}
+            <span className="hover:text-neutral-300 cursor-pointer">Home</span>
           </Link>
           <Link
-            activeClass="active"
-            to="about"
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={500}
+            // activeClass="active"
+            href="/about"
+            // to="hero"
+            // spy={true}
+            // smooth={true}
+            // offset={0}
+            // duration={500}
           >
-            <HeaderItem title="About" />
+            {/* <HeaderItem title="Home" /> */}
+            <span className="hover:text-neutral-300 cursor-pointer">About</span>
           </Link>
           <Link
-            activeClass="active"
-            to="services"
-            spy={true}
-            smooth={true}
-            offset={20}
-            duration={500}
+            // activeClass="active"
+            href="/services"
+            // to="hero"
+            // spy={true}
+            // smooth={true}
+            // offset={0}
+            // duration={500}
           >
-            <HeaderItem title="Services" />
+            {/* <HeaderItem title="Home" /> */}
+            <span className="hover:text-neutral-300 cursor-pointer">Services</span>
           </Link>
           <Link
-            activeClass="active"
-            to="projects"
-            spy={true}
-            smooth={true}
-            offset={30}
-            duration={500}
+            // activeClass="active"
+            href="/projects"
+            // to="hero"
+            // spy={true}
+            // smooth={true}
+            // offset={0}
+            // duration={500}
           >
-            <HeaderItem title="Projects" />
+            {/* <HeaderItem title="Home" /> */}
+            <span className="hover:text-neutral-300 cursor-pointer">Projects</span>
           </Link>
+          <Link
+            // activeClass="active"
+            href="/contact"
+            // to="hero"
+            // spy={true}
+            // smooth={true}
+            // offset={0}
+            // duration={500}
+          >
+            {/* <HeaderItem title="Home" /> */}
+            <span className="hover:text-neutral-300 cursor-pointer">Contact</span>
+          </Link>
+          
 
-          <Link
-            activeClass="active"
-            to="contact"
-            spy={true}
-            smooth={true}
-            offset={80}
-            duration={500}
-          >
-            <motion.div
-              whileHover={{
-                scale: 1.1,
-                textColor: "white",
-                transition: {
-                  type: "spring",
-                  stiffness: 150,
-                  yoyo: Infinity,
-                  duration: 0.3,
-                  ease: "easeOut",
-                },
-              }}
-              className=" border-[2px] py-2 px-3  border-[#3b394a]  hover:text-white "
-            >
-              <HeaderItem title="Contact" />
-            </motion.div>
-          </Link>
+          
         </div>
 
         <div

@@ -24,7 +24,7 @@ function Services() {
   const scrollRef = useRef(null);
   return (
     <div
-     className=" lg:container mx-auto p-6  my-4 0  rounded-lg shadow-lg">
+     className=" lg:container mx-auto p-6  my-4 0  rounded-lg shadow-lg mt-20">
       <motion.div 
         variants={textVariant2}
         initial="hidden"

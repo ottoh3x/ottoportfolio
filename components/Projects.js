@@ -41,7 +41,7 @@ export const pt = (direction) => ({
 
 function Projects() {
   return (
-      <div className="container mx-auto p-6  my-6  rounded-lg shadow-lg overflow-hidden">
+      <div className=" mx-auto p-6  my-6  rounded-lg shadow-lg overflow-hidden mt-20">
         <motion.div 
         variants={textVariant2}
         initial="hidden"
@@ -57,7 +57,7 @@ function Projects() {
         </h1>
 
         <div
-     className="container grid md:grid-cols-3 gap-3 items-center mx-auto py-4">
+     className="w-fit grid md:grid-cols-3 gap-3 items-center mx-auto py-4">
       <motion.div
       variants={pt('left')}
       initial="hidden"
@@ -107,7 +107,33 @@ function Projects() {
       whileInView="show"
       >
          <ProjectsItem
-            title="Animex Stream"
+            title="OTTO Converter"
+            src="/animex.png"
+            url="https://www.animex.live"
+            desc={`An Ad Free Anime Streaming web app to give you a better experience..`}
+          />
+
+      </motion.div>
+      <motion.div
+      variants={pt('right')}
+      initial="hidden"
+      whileInView="show"
+      >
+         <ProjectsItem
+            title="OTTO Knowledge"
+            src="/animex.png"
+            url="https://www.animex.live"
+            desc={`An Ad Free Anime Streaming web app to give you a better experience..`}
+          />
+
+      </motion.div>
+      <motion.div
+      variants={pt('right')}
+      initial="hidden"
+      whileInView="show"
+      >
+         <ProjectsItem
+            title="OTTO Rabbit"
             src="/animex.png"
             url="https://www.animex.live"
             desc={`An Ad Free Anime Streaming web app to give you a better experience..`}

@@ -38,7 +38,7 @@ function About() {
         variants={textVariant2}
         initial="hidden"
         whileInView="show"
-        className="flex flex-col items-center p-4">
+        className="flex flex-col items-center p-4 mt-10">
           {" "}
           <h1 
           className="text-5xl font-black text-white">
@@ -51,7 +51,7 @@ function About() {
  md:w-1/2 mx-auto">
         Hi i'm OTTO Programmer.I'm a Freelance Full Stack Devoloper, and I'm very passionate and dedicated to my work.With 3 years experience as a professional Full Stack Devoloper. I have acquired the skills necessary to build great and premium websites.
         </motion.p></div>
-        <motion.div 
+        {/* <motion.div 
          variants={textVariant2}
          initial="hidden"
          whileInView="show"
@@ -71,7 +71,7 @@ function About() {
           <SkillsIcon icon={<SiHtml5 />} />
           <SkillsIcon icon={<SiCss3 />} />
           <SkillsIcon icon={<SiTailwindcss />} />
-        </div>
+        </div> */}
       </div>
 
       
